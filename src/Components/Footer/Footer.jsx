@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import logo from "../../images/yxBeHcjJHpHN.png"
-import Link_component from './ui/link_component'
+import LinkComponent from './ui/link_component'
 
 export default function Footer() {
   const social = [
@@ -118,7 +118,7 @@ export default function Footer() {
       <div className='links'>
         {
           data.map((item, i) => (
-            <Link_component item={item} key={i} />
+            <LinkComponent item={item} key={i} />
           ))
         }
       </div>

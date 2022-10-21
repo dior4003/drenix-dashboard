@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from "react-router-dom"
 
-export default function Link_component({item}) {
+export default function LinkComponent({item}) {
     const { logo, links } = item;
     return (
         <div className="contact">
