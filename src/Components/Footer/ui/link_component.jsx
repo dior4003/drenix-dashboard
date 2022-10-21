@@ -2,11 +2,11 @@ import React from 'react'
 import { Link } from "react-router-dom"
 
 export default function Link_component({item}) {
-    const { logo, logoTitle, links } = item;
+    const { logo, links } = item;
     return (
         <div className="contact">
             <div className="logo">
-                {logo ? <img src={logo} alt="" /> : <h3>{logoTitle}</h3>}
+                {logo.type==="img" ? <img src={logo.url} alt="" /> : <h3>{logo.url}</h3>}
             </div>
             <ul className="list_group">
                 {links.map((item, i) => (

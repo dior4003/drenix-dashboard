@@ -21,7 +21,10 @@ export default function Footer() {
   ]
   const data = [
     {
-      logo: logo,
+      logo: {
+        url:logo,
+        type:"img",
+      },
       links: [
         {
           icon: "fa-regular fa-phone",
@@ -39,7 +42,10 @@ export default function Footer() {
 
     },
     {
-      logoTitle: "Useful Links",
+      logo: {
+        url:"Useful Links",
+        type: "text",
+      },
       links: [
         {
           url: "",
@@ -59,7 +65,10 @@ export default function Footer() {
       ]
     },
     {
-      logoTitle: "Our Services",
+      logo: {
+        url:"Our Services",
+        type: "text",
+      },
       links: [
         {
           url: "",
@@ -79,7 +88,10 @@ export default function Footer() {
       ]
     },
     {
-      logoTitle: "Support",
+      logo: {
+        url:"Support",
+        type: "text",
+      },
       links: [
         {
           url: "",
