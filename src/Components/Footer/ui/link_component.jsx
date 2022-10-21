@@ -9,9 +9,9 @@ export default function Link_component({item}) {
                 {logo.type==="img" ? <img src={logo.url} alt="" /> : <h3>{logo.url}</h3>}
             </div>
             <ul className="list_group">
-                {links.map((item, i) => (
-                        <Link to={item.url} key={i+1000}>
-                            <li className="list_item">{item.icon ? <i className={item.icon}></i> : null} <span>{item.title}</span></li>
+                {links.map((items, i) => (
+                        <Link to={items.url} key={i+1000}>
+                            <li className="list_item">{items.icon ? <i className={items.icon}></i> : null} <span>{items.title}</span></li>
                         </Link>
                 ))}
 
