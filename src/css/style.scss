@@ -392,7 +392,7 @@ a {
         .search_box {
           display: flex;
           flex-direction: row;
-          justify-content: end;
+          justify-content:flex-end;
           flex-wrap: nowrap;
           .search_box_item {
             display: flex;
@@ -779,7 +779,7 @@ a {
       .col-6 {
         .text_box {
           display: flex;
-          justify-content: start;
+          justify-content: flex-start;
           align-items: center;
           flex-direction: row;
           flex-wrap: wrap;
@@ -787,7 +787,7 @@ a {
           margin-left: 80px;
           .first_text {
             display: flex;
-            justify-content: start;
+            justify-content: flex-start;
             align-items: center;
             margin-bottom: 20px;
             .smal_text {
@@ -798,7 +798,7 @@ a {
           }
           .big_title {
             display: flex;
-            justify-content: start;
+            justify-content: flex-start;
             align-items: center;
             h1 {
               color: rgba(0, 0, 0, 0.755);
@@ -808,7 +808,7 @@ a {
           }
           .small_title {
             display: flex;
-            justify-content: start;
+            justify-content: flex-start;
             align-items: center;
             p {
               padding-top: 20px;
@@ -865,7 +865,7 @@ a {
                   list-style: none;
                   li {
                     display: flex;
-                    justify-content: start;
+                    justify-content: flex-start;
                     align-items: center;
                     span {
                       padding: 8px;
@@ -1124,7 +1124,7 @@ a {
           transition: 0.3s all linear;
           .card_title {
             display: flex;
-            justify-content: start;
+            justify-content: flex-start;
             align-items: center;
             width: 80%;
             margin-top: 100px;
@@ -1137,7 +1137,7 @@ a {
           }
           .card_btn {
             display: flex;
-            justify-content: start;
+            justify-content: flex-start;
             align-items: center;
             width: 80%;
             margin-top: 10px;
@@ -1517,7 +1517,7 @@ a {
           width: 48%;
           height: 150px;
           display: flex;
-          justify-content: start;
+          justify-content: flex-start;
           padding: 10px;
           margin: 5px;
 
@@ -2158,7 +2158,7 @@ a {
         .submit {
           width: 85%;
           display: flex;
-          justify-content: end;
+          justify-content:flex-end;
           align-items: center;
           button {
             padding: 12px;
@@ -2215,7 +2215,7 @@ a {
           padding: 0px 0px 20px 20px;
           list-style: none;
           display: flex;
-          justify-content: start;
+          justify-content: flex-start;
           align-items: flex-start;
           flex-direction: column;
           flex-wrap: nowrap;
@@ -2444,7 +2444,7 @@ a {
         .search_box {
           display: flex;
           flex-direction: row;
-          justify-content: end;
+          justify-content:flex-end;
           flex-wrap: nowrap;
           .search_box_item {
             display: flex;
@@ -2830,7 +2830,7 @@ a {
       .col-6 {
         .text_box {
           display: flex;
-          justify-content: start;
+          justify-content: flex-start;
           align-items: center;
           flex-direction: row;
           flex-wrap: wrap;
@@ -2838,7 +2838,7 @@ a {
           margin-left: 80px;
           .first_text {
             display: flex;
-            justify-content: start;
+            justify-content: flex-start;
             align-items: center;
             margin-bottom: 20px;
             .smal_text {
@@ -2849,7 +2849,7 @@ a {
           }
           .big_title {
             display: flex;
-            justify-content: start;
+            justify-content: flex-start;
             align-items: center;
             h1 {
               color: rgba(0, 0, 0, 0.755);
@@ -2859,7 +2859,7 @@ a {
           }
           .small_title {
             display: flex;
-            justify-content: start;
+            justify-content: flex-start;
             align-items: center;
             p {
               padding-top: 20px;
@@ -2916,7 +2916,7 @@ a {
                   list-style: none;
                   li {
                     display: flex;
-                    justify-content: start;
+                    justify-content: flex-start;
                     align-items: center;
                     span {
                       padding: 8px;
@@ -3175,7 +3175,7 @@ a {
           transition: 0.3s all linear;
           .card_title {
             display: flex;
-            justify-content: start;
+            justify-content: flex-start;
             align-items: center;
             width: 80%;
             margin-top: 100px;
@@ -3188,7 +3188,7 @@ a {
           }
           .card_btn {
             display: flex;
-            justify-content: start;
+            justify-content: flex-start;
             align-items: center;
             width: 80%;
             margin-top: 10px;
@@ -3568,7 +3568,7 @@ a {
           width: 48%;
           height: 150px;
           display: flex;
-          justify-content: start;
+          justify-content: flex-start;
           padding: 10px;
           margin: 5px;
 
@@ -4209,7 +4209,7 @@ a {
         .submit {
           width: 85%;
           display: flex;
-          justify-content: end;
+          justify-content:flex-end;
           align-items: center;
           button {
             padding: 12px;
@@ -4266,7 +4266,7 @@ a {
           padding: 0px 0px 20px 20px;
           list-style: none;
           display: flex;
-          justify-content: start;
+          justify-content: flex-start;
           align-items: flex-start;
           flex-direction: column;
           flex-wrap: nowrap;

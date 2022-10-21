@@ -347,7 +347,7 @@ a {
   .header_box .rows .col-4 .search_box {
     display: flex;
     flex-direction: row;
-    justify-content: end;
+    justify-content: flex-end;
     flex-wrap: nowrap;
   }
   .header_box .rows .col-4 .search_box .search_box_item {
@@ -712,7 +712,7 @@ a {
   }
   .section_3 .row .col-6 .text_box {
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
@@ -721,7 +721,7 @@ a {
   }
   .section_3 .row .col-6 .text_box .first_text {
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
     margin-bottom: 20px;
   }
@@ -732,7 +732,7 @@ a {
   }
   .section_3 .row .col-6 .text_box .big_title {
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
   }
   .section_3 .row .col-6 .text_box .big_title h1 {
@@ -742,7 +742,7 @@ a {
   }
   .section_3 .row .col-6 .text_box .small_title {
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
   }
   .section_3 .row .col-6 .text_box .small_title p {
@@ -802,7 +802,7 @@ a {
   }
   .section_3 .row .col-6 .text_box .col-12 .small_section .small_section_list .left_check li {
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
   }
   .section_3 .row .col-6 .text_box .col-12 .small_section .small_section_list .left_check li span {
@@ -1055,7 +1055,7 @@ a {
   }
   .section_4 .cards_section .card_box .card_item .card_title {
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
     width: 80%;
     margin-top: 100px;
@@ -1068,7 +1068,7 @@ a {
   }
   .section_4 .cards_section .card_box .card_item .card_btn {
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
     width: 80%;
     margin-top: 10px;
@@ -1429,7 +1429,7 @@ a {
     width: 48%;
     height: 150px;
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     padding: 10px;
     margin: 5px;
   }
@@ -2038,7 +2038,7 @@ a {
   .section_10 .contact .form .submit {
     width: 85%;
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     align-items: center;
   }
   .section_10 .contact .form .submit button {
@@ -2094,7 +2094,7 @@ a {
     padding: 0px 0px 20px 20px;
     list-style: none;
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: flex-start;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -2359,7 +2359,7 @@ a {
   .header_box .rows .col-4 .search_box {
     display: flex;
     flex-direction: row;
-    justify-content: end;
+    justify-content: flex-end;
     flex-wrap: nowrap;
   }
   .header_box .rows .col-4 .search_box .search_box_item {
@@ -2723,7 +2723,7 @@ a {
   }
   .section_3 .row .col-6 .text_box {
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
@@ -2732,7 +2732,7 @@ a {
   }
   .section_3 .row .col-6 .text_box .first_text {
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
     margin-bottom: 20px;
   }
@@ -2743,7 +2743,7 @@ a {
   }
   .section_3 .row .col-6 .text_box .big_title {
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
   }
   .section_3 .row .col-6 .text_box .big_title h1 {
@@ -2753,7 +2753,7 @@ a {
   }
   .section_3 .row .col-6 .text_box .small_title {
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
   }
   .section_3 .row .col-6 .text_box .small_title p {
@@ -2813,7 +2813,7 @@ a {
   }
   .section_3 .row .col-6 .text_box .col-12 .small_section .small_section_list .left_check li {
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
   }
   .section_3 .row .col-6 .text_box .col-12 .small_section .small_section_list .left_check li span {
@@ -3066,7 +3066,7 @@ a {
   }
   .section_4 .cards_section .card_box .card_item .card_title {
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
     width: 80%;
     margin-top: 100px;
@@ -3079,7 +3079,7 @@ a {
   }
   .section_4 .cards_section .card_box .card_item .card_btn {
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
     width: 80%;
     margin-top: 10px;
@@ -3440,7 +3440,7 @@ a {
     width: 48%;
     height: 150px;
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     padding: 10px;
     margin: 5px;
   }
@@ -4049,7 +4049,7 @@ a {
   .section_10 .contact .form .submit {
     width: 85%;
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     align-items: center;
   }
   .section_10 .contact .form .submit button {
@@ -4105,7 +4105,7 @@ a {
     padding: 0px 0px 20px 20px;
     list-style: none;
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: flex-start;
     flex-direction: column;
     flex-wrap: nowrap;
