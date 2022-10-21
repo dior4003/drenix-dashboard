@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from "react-router-dom"
 import img1 from "../../images/C50DOzRhJ5sQ.jpg"
 import Card from './ui/Card'
 
