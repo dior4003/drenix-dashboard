@@ -10,11 +10,9 @@ export default function Link_component({item}) {
             </div>
             <ul className="list_group">
                 {links.map((item, i) => (
-                    item.url ?(
                         <Link to={item.url} key={i+1000}>
                             <li className="list_item">{item.icon ? <i className={item.icon}></i> : null} <span>{item.title}</span></li>
-                        </Link>)
-                        : (<li className="list_item">{item.icon ? <i className={item.icon}></i> : null} <span>{item.title}</span></li>)
+                        </Link>
                 ))}
 
 
