@@ -1,11 +1,11 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { Link } from 'react-router-dom';
 import logo from "../../images/zH0oNVjnyWhU.png"
 import NavbarBox from './ui/navbarBox'
 import SearchForm from './ui/SearchForm'
 
 export default function Header() {
-    const [data, setData] = useState([
+    const data = [
         {
             id: 0,
             title: "Home",
@@ -31,7 +31,7 @@ export default function Header() {
             icon: "bi bi-chevron-down"
         },
 
-    ])
+    ]
 
     return (
         <header className="header_box">

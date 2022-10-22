@@ -10,9 +10,9 @@ export default function SearchForm() {
                     <span className='phone'><b>+36 55 540 069</b></span>
                 </div>
                 <div className="search_btns">
-                    <span className='btn_border'><i class="fa-solid fa-magnifying-glass"></i></span>
+                    <span className='btn_border'><i className="fa-solid fa-magnifying-glass"></i></span>
 
-                    <span className='btn_border'><i class="fa-solid fa-right-to-bracket"></i></span>
+                    <span className='btn_border'><i className="fa-solid fa-right-to-bracket"></i></span>
 
                 </div>
             </div>

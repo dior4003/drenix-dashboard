@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 
 
@@ -11,21 +12,21 @@ export default function MainSection() {
         <div className="container">
           <div className="row">
             <div className="col-xs-6">
-              <div class="hero-content">
-                <h3 class="sub-title aos-init aos-animate">
+              <div className="hero-content">
+                <h3 className="sub-title aos-init aos-animate">
                   Technology Related Consultancy
                 </h3>
-                <h2 class="title aos-init aos-animate">
+                <h2 className="title aos-init aos-animate">
                   We bring great Ideas to life
                 </h2>
-                <p data-aos-delay="1400" data-aos="fade-up" class="aos-init aos-animate">
+                <p data-aos-delay="1400" data-aos="fade-up" className="aos-init aos-animate">
                   We provide the most responsive and functional IT design for companies and businesses worldwide
                 </p>
-                <div class="tpc-btn-wrap aos-init aos-animate" data-aos="fade-up" data-aos-delay="1900">
-                  <a class="tpc-btn" href="#">
+                <div className="tpc-btn-wrap aos-init aos-animate" data-aos="fade-up" data-aos-delay="1900">
+                  <Link className="tpc-btn" to="#a">
                     Read More
 
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
