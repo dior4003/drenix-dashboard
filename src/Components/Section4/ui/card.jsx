@@ -4,7 +4,7 @@ export default function Card({card}) {
   return (
       <>
           {card.map((item, i) => (
-              <div key={i} className="card_item" style={{ background: `url(${item.img})` }}>
+              <div key={i} className="card_item" style={{ backgroundImage: `url(${item.img})` }}>
                   <div className="card_title">
                       <h3>
                           {item.name}
