@@ -20,7 +20,7 @@ export default function Contact({ notif }) {
     return (
         <div className='contact'>
             <div className="number_box">
-                <div className="title">
+                <div className="titl">
                     <h1>Let's make something
                         beautiful together</h1>
                 </div>

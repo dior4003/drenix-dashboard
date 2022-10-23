@@ -6696,7 +6696,7 @@ a {
                 opacity: 0;
 
                 font-size: 32px;
-                line-height: 32px;
+                line-height: 30px;
                 font-weight: 600;
                 color: #ffffff;
                 margin-top: 10px;
@@ -6714,7 +6714,7 @@ a {
                 font-weight: 600;
                 color: #ffffff;
                 margin-top: 25px;
-                margin-bottom: 40px;
+                margin-bottom: 30px;
                 animation: opasity;
                 animation-duration: 1s;
                 animation-delay: 1.3s;
@@ -7371,7 +7371,7 @@ a {
       margin-top: 120px;
       margin-bottom: 0px;
       padding: 130px 0px 130px 0px;
-      height: 400px;
+      height: 100%;
       position: relative;
       .section_background {
         background-color: #010c2a;
@@ -7406,6 +7406,8 @@ a {
             align-items: center;
             flex-direction: column;
             flex-wrap: nowrap;
+            padding: 20px;
+            margin: 10px 90px;
             .image_box {
               padding: 20px;
               margin-top: -15px;
@@ -7419,7 +7421,7 @@ a {
               display: flex;
               justify-content: center;
               align-items: center;
-              padding: 12px;
+              padding: 22px;
               .counter_item,
               .counter_icon {
                 font-size: 56px;
@@ -7450,7 +7452,7 @@ a {
     z-index: 1;
     .first_title {
       padding: 30px;
-      margin-top: 40px;
+      margin-top: 0px;
       h1 {
         font-size: 14px;
         color: #005de0;
@@ -7461,19 +7463,27 @@ a {
       // padding: 20px;
       // margin-top: 40px;
       h1 {
-        font-size: 36px;
+        font-size: 28px;
+        padding: 20px;
+        text-align: center;
         color: rgb(25, 25, 25);
         font-weight: 700;
       }
     }
     .corusel_section {
       width: 100%;
-      height: 350px;
-      margin-top: 100px;
+      height: 10%;
+      margin-top: 0px;
       position: relative;
       overflow: hidden;
       transition: 0.3s all linear;
-
+      // .carousel{
+      //   height: 30vh;
+      //   .carousel__inner-slide {
+      //     height: 30vh;
+      // }
+      // }
+      
       .prev {
         position: absolute;
         top: 20%;
@@ -7545,15 +7555,18 @@ a {
           margin-top: 8%;
           z-index: 2;
           .left {
-            width: 30%;
+            width: 35%;
+            margin-top: 5px;
+            padding: 4px;
             .title {
               color: #fff;
-              font-size: 20px;
+              font-size: 7px;
               font-weight: 800;
-              margin-bottom: 30px;
+              margin-bottom: 0px;
             }
             span {
-              padding: 6px 16px;
+              padding: 2px 6px;
+              font-size: 6px;
               background-color: #005de0;
               border-radius: 15px;
               margin-top: 50px;
@@ -7561,13 +7574,13 @@ a {
             }
           }
           .center {
-            width: 50%;
-            margin-top: 20px;
+            width: 45%;
+            margin-top: 0px;
             p {
               color: #fff;
               font-weight: 400;
-              font-size: 12px;
-              line-height: 25px;
+              font-size: 5px;
+              line-height: 8px;
             }
           }
           .buttons {
@@ -7575,12 +7588,12 @@ a {
             display: flex;
             justify-content: center;
             span {
-              font-size: 22px;
+              font-size: 8px;
               color: #fff;
-              padding: 8px 12px;
+              padding: 3px 6px;
               border-radius: 50%;
-              width: 50px;
-              height: 50px;
+              width: 20px;
+              height: 20px;
               background-color: #005de0;
             }
           }
@@ -7653,7 +7666,7 @@ a {
   .section_6 {
     z-index: 1;
     width: 100%;
-    height: 75vh;
+    height: 70vh;
     background-color: #f2f2f2;
     margin-bottom: 100px;
     background-image: url("../images/56kMUCBY2klo.png");
@@ -7673,28 +7686,28 @@ a {
       // border: 1px solid #000;
       position: relative;
       .back {
-        width: 300px;
-        height: 300px;
+        width: 8rem;
+        height: 8rem;
         background: url("../images/KG5kx9q4POgy.png");
         background-size: cover;
         position: absolute;
         top: 70px;
-        right: 10px;
+        right: 60px;
         animation: 18s linear 1s infinite running rotates;
       }
       .img {
-        width: 87%;
-        height: 85%;
+        width: 15rem;
+        height: 30rem;
         background: url("../images/alVzxrsP8AeJ.png");
         background-size: contain;
         background-repeat: no-repeat;
         position: absolute;
-        top: 112px;
-        left: 60px;
+        top: 7rem;
+        left: 10px;
       }
     }
     .decr_section {
-      width: 40%;
+      width: 55%;
       height: 100%;
       display: flex;
       justify-content: center;
@@ -7714,7 +7727,7 @@ a {
         width: 80%;
         h2 {
           color: rgba(0, 0, 0, 0.811);
-          font-size: 24px;
+          font-size: 14px;
           font-weight: 700;
         }
       }
@@ -7726,15 +7739,15 @@ a {
         flex-direction: row;
         flex-wrap: wrap;
         .card {
-          width: 200px;
-          height: 150px;
+          width: 130px;
+          height: 70px;
           display: flex;
           justify-content: flex-start;
           padding: 10px;
           margin: 5px;
 
           .icon {
-            width: 25%;
+            width: 20%;
             img {
               width: 100%;
             }
@@ -7748,18 +7761,17 @@ a {
             .title {
               padding: 10px;
               h1 {
-                font-size: 18px;
+                font-size: 10px;
                 font-weight: 700;
                 color: rgba(0, 0, 0, 0.825);
               }
             }
-            .decr {
-              width: 100%;
-              margin-top: -10px;
+            .decri {
+              width: 90%;
               p {
                 font-size: 8px;
                 font-weight: 600;
-                line-height: 20px;
+                line-height: 8px;
                 color: rgba(0, 0, 0, 0.744);
               }
             }
@@ -7774,7 +7786,7 @@ a {
       width: 90%;
       margin-right: auto;
       margin-left: auto;
-      height: 80vh;
+      height: 100%;
       margin-bottom: 50px;
       .row {
         display: flex;
@@ -7812,6 +7824,7 @@ a {
           .card {
             width: 220px;
             height: 330px;
+            margin-top: 30px;
             border-radius: 8px;
             background-repeat: no-repeat !important;
             background-size: cover;
@@ -7915,25 +7928,29 @@ a {
 
   .section_8 {
     width: 100%;
-    height: 75vh;
+    height: 100%;
     background-color: #010c2a;
-    margin-bottom: 100px;
+    margin-bottom: 30px;
     position: relative;
     display: flex;
     justify-content: center;
+    flex-direction: column-reverse;
     z-index: 0;
     .hidden {
-      width: 43%;
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
       height: 100%;
       position: absolute;
-      right: 0;
+      // right: 0;
       // overflow: hidden;
     }
     .carouselwrapper {
       overflow: hidden;
       position: relative;
-      width: 650px;
-      margin-left: 25%;
+      width: 470px;
+      margin-left: auto;
+      margin-right: auto;
       .ui {
         position: absolute;
         padding: 30px;
@@ -7977,7 +7994,7 @@ a {
         display: flex;
         flex-wrap: wrap;
         list-style: none;
-        height: 75vh;
+        height: 60vh;
         padding: 0;
         justify-content: space-around;
         flex-direction: column;
@@ -8015,42 +8032,44 @@ a {
           margin: var(--card-margin);
           background: #fff;
           h2 {
-            margin-top: 40px;
-            padding: 20px;
+            margin-top: 0px;
+            padding: 10px;
+            font-size: 12px;
             color: #005de0;
           }
           .p {
             text-decoration: underline;
-            line-height: 30px;
-            font-size: 16px;
+            line-height: 12px;
+            font-size: 12px;
           }
           .author {
-            padding: 20px;
-            margin-top: 30px;
+            padding: 10px;
+            margin-top: 0px;
             display: flex;
             justify-content: space-between;
             .text {
-              padding: 20px;
+              padding: 5px;
               h4 {
-                font-size: 20px;
+                font-size: 10px;
                 font-weight: 700;
                 color: rgba(0, 0, 0, 0.854);
               }
               p {
-                font-size: 14px;
+                font-size: 10px;
                 font-weight: 300;
                 color: #005de0;
               }
             }
             .icon {
-              width: 80px;
-              height: 80px;
+              width: 30px;
+              height: 30px;
               border-radius: 50%;
+              margin-top: 6px;
               position: relative;
               overflow: hidden;
               img {
-                width: 80px;
-                height: 80px;
+                width: 30px;
+                height: 30px;
               }
             }
           }
@@ -8080,12 +8099,12 @@ a {
       }
     }
     .left_box {
-      position: absolute;
+      position: initial;
       left: 4%;
       top: 110px;
       display: flex;
       justify-content: center;
-      align-items: flex-start;
+      align-items: center;
       flex-direction: column;
       flex-wrap: nowrap;
       .title {
@@ -8097,12 +8116,13 @@ a {
         }
       }
       .decr {
-        width: 50%;
+        width: 70%;
         h1 {
           font-size: 24px;
           color: #fff;
           font-weight: 700;
           padding: 20px;
+          text-align: center;
         }
       }
     }
@@ -8112,7 +8132,7 @@ a {
     width: 90%;
     margin-right: auto;
     margin-left: auto;
-    margin-bottom: 100px;
+    margin-bottom: 20px;
     .row {
       flex-direction: column;
       flex-wrap: nowrap;
@@ -8144,10 +8164,11 @@ a {
         align-items: center;
         flex-direction: row;
         flex-wrap: wrap;
-        margin-top: 100px;
+        margin-top: 40px;
         .card {
-          width: 300px;
-          height: 450px;
+          width: 200px;
+          margin-bottom: 25px;
+          height: 350px;
           display: flex;
           flex-direction: column;
           overflow: hidden;
@@ -8172,9 +8193,10 @@ a {
               i {
                 color: #005de0;
                 padding-right: 6px;
+                font-size: 11px;
               }
               span {
-                font-size: 11px;
+                font-size: 8px;
                 font-weight: 700;
                 position: relative;
                 span {
@@ -8182,7 +8204,7 @@ a {
                   right: -15px;
                   top: -10px;
                   padding: 2px 4px;
-                  font-size: 10px;
+                  font-size: 6px;
                   color: #fff;
                   background-color: #010c2a;
                   border-radius: 8px;
@@ -8192,17 +8214,18 @@ a {
           }
           .title {
             width: 100%;
-            margin-top: -15px;
+            margin-top: -20px;
             h1 {
               color: rgba(0, 0, 0, 0.837);
-              font-size: 16px;
+              font-size: 12px;
               font-weight: 700;
             }
           }
           .decr {
-            padding: 10px;
+            padding: 8px;
+            margin-top: -15px;
             p {
-              padding-left: 10px;
+              padding-left: 8px;
               font-weight: 500;
               line-height: 15px;
               font-size: 12px;
@@ -8210,8 +8233,8 @@ a {
             }
           }
           .links {
-            font-size: 14px;
-            padding: 20px;
+            font-size: 10px;
+            padding: 14px;
             font-weight: 800;
             color: #005de0;
             display: flex;
@@ -8241,6 +8264,7 @@ a {
       align-items: center;
       h1 {
         color: rgba(0, 0, 0, 0.547);
+        font-size: 14px;
         span {
           color: #005de0;
         }
@@ -8260,7 +8284,7 @@ a {
     }
     .contact {
       width: 100%;
-      height: 600px;
+      height: 400px;
       background: url("../images/5H50SduXWxqR.jpeg");
       // background-repeat: no-repeat !important;
       background-size: contain;
@@ -8271,11 +8295,11 @@ a {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 0px 100px 0px 100px;
-        .title {
-          width: 50%;
+        padding: 40px 40px 60px 40px;
+        .titl {
+          width: 60%;
           h1 {
-            font-size: 30px;
+            font-size: 16px;
             font-weight: 800;
             color: #fff;
             font-family: "Times New Roman", Times, serif;
@@ -8283,7 +8307,7 @@ a {
         }
         .phone {
           h1 {
-            font-size: 30px;
+            font-size: 16px;
             font-weight: 800;
             color: #fff;
             font-family: "Times New Roman", Times, serif;
@@ -8291,10 +8315,10 @@ a {
         }
       }
       .form {
-        width: 70%;
-        height: 55%;
-        padding-left: 100px;
-        padding-right: 100px;
+        width: 85%;
+        height: 59%;
+        padding-left: 10px;
+        padding-right: 10px;
         margin-top: -30px;
         margin-right: auto;
         margin-left: auto;
@@ -8308,17 +8332,17 @@ a {
           align-items: center;
 
           .name_input {
-            padding: 25px;
+            padding: 13px;
             width: 30%;
             display: flex;
             // border: 1px solid gray;
-            justify-content: space-between;
+            justify-content: flex-end;
             input {
               display: block;
             }
             span {
-              padding: 15px;
-              font-size: 14px;
+              padding: 10px;
+              font-size: 10px;
               font-weight: 800;
               color: #005de0;
               border-radius: 8px;
@@ -8326,23 +8350,23 @@ a {
             }
           }
           .contact_int {
-            padding: 20px;
+            padding: 10px;
             display: flex;
             justify-content: space-evenly;
             align-items: center;
             input {
               border: none;
               outline: none;
-              padding: 15px;
-              font-size: 14px;
+              padding: 10px;
+              font-size: 10px;
               border-radius: 8px;
             }
             label {
-              font-size: 14px;
+              font-size: 10px;
               font-weight: 800px;
               color: #005de0;
-              padding-top: 20px;
-              padding-left: 10px;
+              padding-top: 10px;
+              padding-left: 5px;
             }
           }
         }
@@ -8354,16 +8378,16 @@ a {
             padding: 10px 20px 0px 20px;
             input {
               width: 96%;
-              padding: 15px;
-              font-size: 14px;
+              padding: 10px;
+              font-size: 10px;
               border: none;
               outline: none;
             }
           }
           textarea {
             width: 96%;
-            padding: 15px;
-            font-size: 14px;
+            padding: 10px;
+            font-size: 10px;
             border: none;
             outline: none;
           }
@@ -8374,10 +8398,10 @@ a {
           justify-content:flex-end;
           align-items: center;
           button {
-            padding: 12px;
+            padding: 10px;
             outline: none;
             border: none;
-            font-size: 14px;
+            font-size: 10px;
             color: #fff;
             border-radius: 8px;
             background-color: rgba(0, 215, 7, 0.841);
@@ -8388,7 +8412,7 @@ a {
   }
   .footer {
     width: 100%;
-    height: 75vh;
+    height: 100%;
     background-color: #010c2a;
     z-index: 1;
     padding-top: 148px;
@@ -8399,7 +8423,7 @@ a {
       margin-left: auto;
       margin-right: auto;
       width: 90%;
-      height: 200px;
+      height: 180px;
       padding: 10px 35px 20px 10px;
       display: flex;
       justify-content: space-between;
@@ -8412,20 +8436,20 @@ a {
         align-items: flex-start;
         flex-direction: column;
         flex-wrap: nowrap;
-        width: 200px;
+        width: 110px;
         .logo {
-          padding: 20px 0px 20px 20px;
+          padding: 0px 0px 0px 12px;
           img {
-            width: 100px;
+            width: 80px;
           }
           h3 {
-            font-size: 18px;
+            font-size: 12px;
             color: #fff;
-            padding: 10px 0px 0px 15px;
+            padding: 10px 0px 0px 0px;
           }
         }
         .list_group {
-          padding: 0px 0px 20px 20px;
+          padding: 0px 0px 10px 10px;
           list-style: none;
           display: flex;
           justify-content: flex-start;
@@ -8433,13 +8457,14 @@ a {
           flex-direction: column;
           flex-wrap: nowrap;
           .list_item {
-            padding: 5px;
-            font-size: 12px;
+            padding: 2px;
+            font-size: 6px;
             font-weight: 600;
             color: #ccc;
             i {
               color: #005de0;
               padding: 6px;
+              font-size: 6px;
             }
           }
         }
@@ -8450,20 +8475,20 @@ a {
       border-width: 0;
       color: rgba(94, 94, 94, 0.779);
       background-color: rgba(94, 94, 94, 0.687);
-      margin-top: 50px;
+      margin-top: -50px;
     }
     .foo_bar {
-      width: 70%;
+      width: 90%;
       margin-left: auto;
       margin-right: auto;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 10px 30px 0px 30px;
+      padding: 0px 30px 0px 30px;
       p {
         color: rgb(121, 121, 121);
         padding: 20px 0px 20px 0px;
-        font-size: 14px;
+        font-size: 7px;
       }
       .social_box {
         display: flex;
@@ -8472,12 +8497,17 @@ a {
         align-items: center;
         margin-top: 10px;
         li {
-          padding: 10px 13px;
+          padding: 0px 7px;
           background-color: rgba(34, 34, 34, 0.669);
           border-radius: 50%;
           margin: 5px;
+          height: 23px;
+          width: 23px;
           a {
             color: #fff;
+            i{
+              font-size: 7px;
+            }
           }
           &:hover {
             background-color: #005de0;

@@ -52,7 +52,7 @@ export default function Section6() {
                                 <div className="title">
                                     <h1>{item.title}</h1>
                                 </div>
-                                <div className="decr">
+                                <div className="decri">
                                     <p>{item.decr}</p>
                                 </div>
                             </div>

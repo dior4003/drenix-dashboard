@@ -74,7 +74,7 @@ export default function Corusel() {
                 {data.map((item, i) => (
                     <Slide index={i} key={i} className="sll">
 
-                        <img src={item.img} alt="" style={{ width: "160px", height: "90px" }} />
+                        <img src={item.img} alt="" style={{ width: "90px", height: "50px" }} />
                     </Slide>
                 ))}
             </Slider>

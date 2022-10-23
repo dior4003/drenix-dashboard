@@ -6543,7 +6543,7 @@ a {
     transform: translateY(300px);
     opacity: 0;
     font-size: 32px;
-    line-height: 32px;
+    line-height: 30px;
     font-weight: 600;
     color: #ffffff;
     margin-top: 10px;
@@ -6564,7 +6564,7 @@ a {
     font-weight: 600;
     color: #ffffff;
     margin-top: 25px;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     -webkit-animation: opasity;
             animation: opasity;
     -webkit-animation-duration: 1s;
@@ -7197,7 +7197,7 @@ a {
     margin-top: 120px;
     margin-bottom: 0px;
     padding: 130px 0px 130px 0px;
-    height: 400px;
+    height: 100%;
     position: relative;
   }
   .section_4 .full_section .section_background {
@@ -7235,6 +7235,8 @@ a {
     align-items: center;
     flex-direction: column;
     flex-wrap: nowrap;
+    padding: 20px;
+    margin: 10px 90px;
   }
   .section_4 .full_section .section_container .section_item .item .image_box {
     padding: 20px;
@@ -7248,7 +7250,7 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 12px;
+    padding: 22px;
   }
   .section_4 .full_section .section_container .section_item .item .counter_box .counter_item,
 .section_4 .full_section .section_container .section_item .item .counter_box .counter_icon {
@@ -7275,7 +7277,7 @@ a {
   }
   .section_5 .first_title {
     padding: 30px;
-    margin-top: 40px;
+    margin-top: 0px;
   }
   .section_5 .first_title h1 {
     font-size: 14px;
@@ -7283,14 +7285,16 @@ a {
     font-weight: 700;
   }
   .section_5 .second_title h1 {
-    font-size: 36px;
+    font-size: 28px;
+    padding: 20px;
+    text-align: center;
     color: rgb(25, 25, 25);
     font-weight: 700;
   }
   .section_5 .corusel_section {
     width: 100%;
-    height: 350px;
-    margin-top: 100px;
+    height: 10%;
+    margin-top: 0px;
     position: relative;
     overflow: hidden;
     transition: 0.3s all linear;
@@ -7362,30 +7366,33 @@ a {
     z-index: 2;
   }
   .section_5 .corusel_section .card .card_box .left {
-    width: 30%;
+    width: 35%;
+    margin-top: 5px;
+    padding: 4px;
   }
   .section_5 .corusel_section .card .card_box .left .title {
     color: #fff;
-    font-size: 20px;
+    font-size: 7px;
     font-weight: 800;
-    margin-bottom: 30px;
+    margin-bottom: 0px;
   }
   .section_5 .corusel_section .card .card_box .left span {
-    padding: 6px 16px;
+    padding: 2px 6px;
+    font-size: 6px;
     background-color: #005de0;
     border-radius: 15px;
     margin-top: 50px;
     color: #fff;
   }
   .section_5 .corusel_section .card .card_box .center {
-    width: 50%;
-    margin-top: 20px;
+    width: 45%;
+    margin-top: 0px;
   }
   .section_5 .corusel_section .card .card_box .center p {
     color: #fff;
     font-weight: 400;
-    font-size: 12px;
-    line-height: 25px;
+    font-size: 5px;
+    line-height: 8px;
   }
   .section_5 .corusel_section .card .card_box .buttons {
     width: 20%;
@@ -7393,12 +7400,12 @@ a {
     justify-content: center;
   }
   .section_5 .corusel_section .card .card_box .buttons span {
-    font-size: 22px;
+    font-size: 8px;
     color: #fff;
-    padding: 8px 12px;
+    padding: 3px 6px;
     border-radius: 50%;
-    width: 50px;
-    height: 50px;
+    width: 20px;
+    height: 20px;
     background-color: #005de0;
   }
   .section_5 .tpc-btn-wrap {
@@ -7460,7 +7467,7 @@ a {
   .section_6 {
     z-index: 1;
     width: 100%;
-    height: 75vh;
+    height: 70vh;
     background-color: #f2f2f2;
     margin-bottom: 100px;
     background-image: url("../images/56kMUCBY2klo.png");
@@ -7481,28 +7488,28 @@ a {
     position: relative;
   }
   .section_6 .img_section .back {
-    width: 300px;
-    height: 300px;
+    width: 8rem;
+    height: 8rem;
     background: url("../images/KG5kx9q4POgy.png");
     background-size: cover;
     position: absolute;
     top: 70px;
-    right: 10px;
+    right: 60px;
     -webkit-animation: 18s linear 1s infinite running rotates;
             animation: 18s linear 1s infinite running rotates;
   }
   .section_6 .img_section .img {
-    width: 87%;
-    height: 85%;
+    width: 15rem;
+    height: 30rem;
     background: url("../images/alVzxrsP8AeJ.png");
     background-size: contain;
     background-repeat: no-repeat;
     position: absolute;
-    top: 112px;
-    left: 60px;
+    top: 7rem;
+    left: 10px;
   }
   .section_6 .decr_section {
-    width: 40%;
+    width: 55%;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -7524,7 +7531,7 @@ a {
   }
   .section_6 .decr_section .decr h2 {
     color: rgba(0, 0, 0, 0.811);
-    font-size: 24px;
+    font-size: 14px;
     font-weight: 700;
   }
   .section_6 .decr_section .card_box {
@@ -7536,15 +7543,15 @@ a {
     flex-wrap: wrap;
   }
   .section_6 .decr_section .card_box .card {
-    width: 200px;
-    height: 150px;
+    width: 130px;
+    height: 70px;
     display: flex;
     justify-content: flex-start;
     padding: 10px;
     margin: 5px;
   }
   .section_6 .decr_section .card_box .card .icon {
-    width: 25%;
+    width: 20%;
   }
   .section_6 .decr_section .card_box .card .icon img {
     width: 100%;
@@ -7560,18 +7567,17 @@ a {
     padding: 10px;
   }
   .section_6 .decr_section .card_box .card .text_box .title h1 {
-    font-size: 18px;
+    font-size: 10px;
     font-weight: 700;
     color: rgba(0, 0, 0, 0.825);
   }
-  .section_6 .decr_section .card_box .card .text_box .decr {
-    width: 100%;
-    margin-top: -10px;
+  .section_6 .decr_section .card_box .card .text_box .decri {
+    width: 90%;
   }
-  .section_6 .decr_section .card_box .card .text_box .decr p {
+  .section_6 .decr_section .card_box .card .text_box .decri p {
     font-size: 8px;
     font-weight: 600;
-    line-height: 20px;
+    line-height: 8px;
     color: rgba(0, 0, 0, 0.744);
   }
   .section_7 {
@@ -7581,7 +7587,7 @@ a {
     width: 90%;
     margin-right: auto;
     margin-left: auto;
-    height: 80vh;
+    height: 100%;
     margin-bottom: 50px;
   }
   .section_7 .container .row {
@@ -7622,6 +7628,7 @@ a {
   .section_7 .container .row .card_box .card {
     width: 220px;
     height: 330px;
+    margin-top: 30px;
     border-radius: 8px;
     background-repeat: no-repeat !important;
     background-size: cover;
@@ -7714,25 +7721,28 @@ a {
   }
   .section_8 {
     width: 100%;
-    height: 75vh;
+    height: 100%;
     background-color: #010c2a;
-    margin-bottom: 100px;
+    margin-bottom: 30px;
     position: relative;
     display: flex;
     justify-content: center;
+    flex-direction: column-reverse;
     z-index: 0;
   }
   .section_8 .hidden {
-    width: 43%;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
     height: 100%;
     position: absolute;
-    right: 0;
   }
   .section_8 .carouselwrapper {
     overflow: hidden;
     position: relative;
-    width: 650px;
-    margin-left: 25%;
+    width: 470px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .section_8 .carouselwrapper .ui {
     position: absolute;
@@ -7775,7 +7785,7 @@ a {
     display: flex;
     flex-wrap: wrap;
     list-style: none;
-    height: 75vh;
+    height: 60vh;
     padding: 0;
     justify-content: space-around;
     flex-direction: column;
@@ -7814,44 +7824,46 @@ a {
     background: #fff;
   }
   .section_8 .carouselwrapper .carousel_ .card_ h2 {
-    margin-top: 40px;
-    padding: 20px;
+    margin-top: 0px;
+    padding: 10px;
+    font-size: 12px;
     color: #005de0;
   }
   .section_8 .carouselwrapper .carousel_ .card_ .p {
     text-decoration: underline;
-    line-height: 30px;
-    font-size: 16px;
+    line-height: 12px;
+    font-size: 12px;
   }
   .section_8 .carouselwrapper .carousel_ .card_ .author {
-    padding: 20px;
-    margin-top: 30px;
+    padding: 10px;
+    margin-top: 0px;
     display: flex;
     justify-content: space-between;
   }
   .section_8 .carouselwrapper .carousel_ .card_ .author .text {
-    padding: 20px;
+    padding: 5px;
   }
   .section_8 .carouselwrapper .carousel_ .card_ .author .text h4 {
-    font-size: 20px;
+    font-size: 10px;
     font-weight: 700;
     color: rgba(0, 0, 0, 0.854);
   }
   .section_8 .carouselwrapper .carousel_ .card_ .author .text p {
-    font-size: 14px;
+    font-size: 10px;
     font-weight: 300;
     color: #005de0;
   }
   .section_8 .carouselwrapper .carousel_ .card_ .author .icon {
-    width: 80px;
-    height: 80px;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
+    margin-top: 6px;
     position: relative;
     overflow: hidden;
   }
   .section_8 .carouselwrapper .carousel_ .card_ .author .icon img {
-    width: 80px;
-    height: 80px;
+    width: 30px;
+    height: 30px;
   }
   .section_8 .carouselwrapper .carousel_ .card_::before {
     content: "";
@@ -7876,12 +7888,12 @@ a {
     border-radius: 6px;
   }
   .section_8 .left_box {
-    position: absolute;
+    position: initial;
     left: 4%;
     top: 110px;
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     flex-direction: column;
     flex-wrap: nowrap;
   }
@@ -7892,19 +7904,20 @@ a {
     padding: 20px;
   }
   .section_8 .left_box .decr {
-    width: 50%;
+    width: 70%;
   }
   .section_8 .left_box .decr h1 {
     font-size: 24px;
     color: #fff;
     font-weight: 700;
     padding: 20px;
+    text-align: center;
   }
   .section_9 {
     width: 90%;
     margin-right: auto;
     margin-left: auto;
-    margin-bottom: 100px;
+    margin-bottom: 20px;
   }
   .section_9 .row {
     flex-direction: column;
@@ -7938,11 +7951,12 @@ a {
     align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
-    margin-top: 100px;
+    margin-top: 40px;
   }
   .section_9 .row .card_box .card {
-    width: 300px;
-    height: 450px;
+    width: 200px;
+    margin-bottom: 25px;
+    height: 350px;
     display: flex;
     flex-direction: column;
     overflow: hidden;
@@ -7968,9 +7982,10 @@ a {
   .section_9 .row .card_box .card .teg_buttons a i {
     color: #005de0;
     padding-right: 6px;
+    font-size: 11px;
   }
   .section_9 .row .card_box .card .teg_buttons a span {
-    font-size: 11px;
+    font-size: 8px;
     font-weight: 700;
     position: relative;
   }
@@ -7979,33 +7994,34 @@ a {
     right: -15px;
     top: -10px;
     padding: 2px 4px;
-    font-size: 10px;
+    font-size: 6px;
     color: #fff;
     background-color: #010c2a;
     border-radius: 8px;
   }
   .section_9 .row .card_box .card .title {
     width: 100%;
-    margin-top: -15px;
+    margin-top: -20px;
   }
   .section_9 .row .card_box .card .title h1 {
     color: rgba(0, 0, 0, 0.837);
-    font-size: 16px;
+    font-size: 12px;
     font-weight: 700;
   }
   .section_9 .row .card_box .card .decr {
-    padding: 10px;
+    padding: 8px;
+    margin-top: -15px;
   }
   .section_9 .row .card_box .card .decr p {
-    padding-left: 10px;
+    padding-left: 8px;
     font-weight: 500;
     line-height: 15px;
     font-size: 12px;
     color: rgba(28, 27, 27, 0.8666666667);
   }
   .section_9 .row .card_box .card .links {
-    font-size: 14px;
-    padding: 20px;
+    font-size: 10px;
+    padding: 14px;
     font-weight: 800;
     color: #005de0;
     display: flex;
@@ -8026,6 +8042,7 @@ a {
   }
   .section_10 .title h1 {
     color: rgba(0, 0, 0, 0.547);
+    font-size: 14px;
   }
   .section_10 .title h1 span {
     color: #005de0;
@@ -8042,7 +8059,7 @@ a {
   }
   .section_10 .contact {
     width: 100%;
-    height: 600px;
+    height: 400px;
     background: url("../images/5H50SduXWxqR.jpeg");
     background-size: contain;
     border-radius: 8px;
@@ -8052,28 +8069,28 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0px 100px 0px 100px;
+    padding: 40px 40px 60px 40px;
   }
-  .section_10 .contact .number_box .title {
-    width: 50%;
+  .section_10 .contact .number_box .titl {
+    width: 60%;
   }
-  .section_10 .contact .number_box .title h1 {
-    font-size: 30px;
+  .section_10 .contact .number_box .titl h1 {
+    font-size: 16px;
     font-weight: 800;
     color: #fff;
     font-family: "Times New Roman", Times, serif;
   }
   .section_10 .contact .number_box .phone h1 {
-    font-size: 30px;
+    font-size: 16px;
     font-weight: 800;
     color: #fff;
     font-family: "Times New Roman", Times, serif;
   }
   .section_10 .contact .form {
-    width: 70%;
-    height: 55%;
-    padding-left: 100px;
-    padding-right: 100px;
+    width: 85%;
+    height: 59%;
+    padding-left: 10px;
+    padding-right: 10px;
     margin-top: -30px;
     margin-right: auto;
     margin-left: auto;
@@ -8088,24 +8105,24 @@ a {
     align-items: center;
   }
   .section_10 .contact .form .contact_input .name_input {
-    padding: 25px;
+    padding: 13px;
     width: 30%;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
   }
   .section_10 .contact .form .contact_input .name_input input {
     display: block;
   }
   .section_10 .contact .form .contact_input .name_input span {
-    padding: 15px;
-    font-size: 14px;
+    padding: 10px;
+    font-size: 10px;
     font-weight: 800;
     color: #005de0;
     border-radius: 8px;
     background-color: #fff;
   }
   .section_10 .contact .form .contact_input .contact_int {
-    padding: 20px;
+    padding: 10px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -8113,16 +8130,16 @@ a {
   .section_10 .contact .form .contact_input .contact_int input {
     border: none;
     outline: none;
-    padding: 15px;
-    font-size: 14px;
+    padding: 10px;
+    font-size: 10px;
     border-radius: 8px;
   }
   .section_10 .contact .form .contact_input .contact_int label {
-    font-size: 14px;
+    font-size: 10px;
     font-weight: 800px;
     color: #005de0;
-    padding-top: 20px;
-    padding-left: 10px;
+    padding-top: 10px;
+    padding-left: 5px;
   }
   .section_10 .contact .form .team_input {
     width: 100%;
@@ -8134,15 +8151,15 @@ a {
   }
   .section_10 .contact .form .team_input .text_int input {
     width: 96%;
-    padding: 15px;
-    font-size: 14px;
+    padding: 10px;
+    font-size: 10px;
     border: none;
     outline: none;
   }
   .section_10 .contact .form .team_input textarea {
     width: 96%;
-    padding: 15px;
-    font-size: 14px;
+    padding: 10px;
+    font-size: 10px;
     border: none;
     outline: none;
   }
@@ -8153,17 +8170,17 @@ a {
     align-items: center;
   }
   .section_10 .contact .form .submit button {
-    padding: 12px;
+    padding: 10px;
     outline: none;
     border: none;
-    font-size: 14px;
+    font-size: 10px;
     color: #fff;
     border-radius: 8px;
     background-color: rgba(0, 215, 7, 0.841);
   }
   .footer {
     width: 100%;
-    height: 75vh;
+    height: 100%;
     background-color: #010c2a;
     z-index: 1;
     padding-top: 148px;
@@ -8174,7 +8191,7 @@ a {
     margin-left: auto;
     margin-right: auto;
     width: 90%;
-    height: 200px;
+    height: 180px;
     padding: 10px 35px 20px 10px;
     display: flex;
     justify-content: space-between;
@@ -8188,21 +8205,21 @@ a {
     align-items: flex-start;
     flex-direction: column;
     flex-wrap: nowrap;
-    width: 200px;
+    width: 110px;
   }
   .footer .links .contact .logo {
-    padding: 20px 0px 20px 20px;
+    padding: 0px 0px 0px 12px;
   }
   .footer .links .contact .logo img {
-    width: 100px;
+    width: 80px;
   }
   .footer .links .contact .logo h3 {
-    font-size: 18px;
+    font-size: 12px;
     color: #fff;
-    padding: 10px 0px 0px 15px;
+    padding: 10px 0px 0px 0px;
   }
   .footer .links .contact .list_group {
-    padding: 0px 0px 20px 20px;
+    padding: 0px 0px 10px 10px;
     list-style: none;
     display: flex;
     justify-content: flex-start;
@@ -8211,35 +8228,36 @@ a {
     flex-wrap: nowrap;
   }
   .footer .links .contact .list_group .list_item {
-    padding: 5px;
-    font-size: 12px;
+    padding: 2px;
+    font-size: 6px;
     font-weight: 600;
     color: #ccc;
   }
   .footer .links .contact .list_group .list_item i {
     color: #005de0;
     padding: 6px;
+    font-size: 6px;
   }
   .footer hr {
     height: 1px;
     border-width: 0;
     color: rgba(94, 94, 94, 0.779);
     background-color: rgba(94, 94, 94, 0.687);
-    margin-top: 50px;
+    margin-top: -50px;
   }
   .footer .foo_bar {
-    width: 70%;
+    width: 90%;
     margin-left: auto;
     margin-right: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 30px 0px 30px;
+    padding: 0px 30px 0px 30px;
   }
   .footer .foo_bar p {
     color: rgb(121, 121, 121);
     padding: 20px 0px 20px 0px;
-    font-size: 14px;
+    font-size: 7px;
   }
   .footer .foo_bar .social_box {
     display: flex;
@@ -8249,13 +8267,18 @@ a {
     margin-top: 10px;
   }
   .footer .foo_bar .social_box li {
-    padding: 10px 13px;
+    padding: 0px 7px;
     background-color: rgba(34, 34, 34, 0.669);
     border-radius: 50%;
     margin: 5px;
+    height: 23px;
+    width: 23px;
   }
   .footer .foo_bar .social_box li a {
     color: #fff;
+  }
+  .footer .foo_bar .social_box li a i {
+    font-size: 7px;
   }
   .footer .foo_bar .social_box li:hover {
     background-color: #005de0;
