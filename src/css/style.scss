@@ -7188,15 +7188,17 @@ a {
     margin-right: auto;
     z-index: 1;
     .row {
+      flex-direction: column;
       .col-5 {
-        height: 800px;
+        height: 100%;
+        width: 100%;
         // border: 1px solid #000;
         overflow: hidden;
         .background_section {
-          width: 105%;
+          width: 100%;
           height: 100%;
           background-image: url(../images/RfTA3F1cMuBZ.jpg);
-          background-position: top -130px center;
+          background-position: top -100px center;
           background-repeat: no-repeat;
           background-size: 100%;
           display: flex;
@@ -7208,11 +7210,11 @@ a {
           z-index: 0;
           .big_text {
             // padding: 30px;
-            margin-left: 30px;
-            margin-top: 70px;
+            margin-left: 0px;
+            margin-top: 30px;
             // line-height: 20px;
             h1 {
-              font-size: 120px;
+              font-size: 100px;
               font-weight: 800;
               color: #005de0;
             }
@@ -7222,15 +7224,17 @@ a {
             margin-left: -5px;
 
             h1 {
+              font-size: 16px;
               font-weight: 200;
             }
           }
           .thrid_text {
-            margin-left: 175px;
+            margin-left: 0px;
+            text-align: center;
             width: 70%;
             h1 {
               margin-left: 15px;
-              font-size: 32px;
+              font-size: 24px;
               font-weight: 700;
               color: rgba(0, 0, 0, 0.81);
               span {
@@ -7241,6 +7245,9 @@ a {
         }
       }
       .col-6 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
         .left_box {
           height: 400px;
           width: 80%;
@@ -7248,13 +7255,15 @@ a {
           justify-content: center;
           align-items: center;
           flex-direction: column;
-          margin-left: 21%;
+          margin-left: 0px;
           margin-top: 20px;
           .box_title {
             h1 {
-              font-size: 28px;
+              font-size: 20px;
               font-weight: 600;
               color: rgba(0, 0, 0, 0.801);
+              text-decoration: underline;
+              text-align: center;
             }
           }
           .progress_bar {
@@ -7298,7 +7307,7 @@ a {
     }
     .cards_section {
       width: 90%;
-      margin-top: -150px;
+      margin-top: 0px;
       margin-left: auto;
       margin-right: auto;
       // border: 1px solid #000;
@@ -7328,7 +7337,7 @@ a {
             justify-content: flex-start;
             align-items: center;
             width: 80%;
-            margin-top: 100px;
+            margin-top: 40%;
             h3 {
               color: #fff;
               font-size: 28px;
