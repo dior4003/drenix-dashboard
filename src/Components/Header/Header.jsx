@@ -36,6 +36,10 @@ export default function Header() {
     return (
         <header className="header_box">
             <div className="rows">
+            <div className="toggle">
+                        <span>
+                        <i class="fa-solid fa-bars"></i>                        </span>
+                    </div>
                 <div className="col-2">
                     <div className="logo_brand">
                         <Link top="/">
@@ -47,6 +51,7 @@ export default function Header() {
                     <nav className="navbar">
                         <NavbarBox data={data} />
                     </nav>
+                   
                 </div>
                 <div className="col-4">
                     <SearchForm />
