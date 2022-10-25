@@ -1,6 +1,9 @@
 import React from 'react'
+import { useEffect } from 'react'
+import { useState } from 'react'
 import Footer from './Footer'
 import Header from './Header'
+import Loader from './Loader'
 import MainSection from './Section1'
 import Section10 from './Section10/Section10'
 import Section2 from './Section2'
@@ -13,9 +16,20 @@ import Section8 from './Section8'
 import Section9 from './Section9'
 
 export default function Main() {
+    const [loading ,setLoading]=useState(true);
+    useEffect(()=>{
+        setTimeout(()=>{
+            setLoading(false)
+        },2000)
+    },[loading])
+    const [nav , setNav]=useState("col-6")
+    const [search, setSearch]=useState(false)
+
     return (
-        <>
-            <Header />
+        <div onClick={()=>setSearch(false)}>
+        {loading? <Loader />:null}
+           
+            <Header nav={nav} setNav={setNav} search={search} setSearch={setSearch}/>
             <MainSection />
             <Section2 />
             <Section3 />
@@ -27,6 +41,6 @@ export default function Main() {
             <Section9 />
             <Section10 />
             <Footer />
-        </>
+        </div>
     )
 }

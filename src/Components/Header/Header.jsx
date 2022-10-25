@@ -4,7 +4,8 @@ import logo from "../../images/zH0oNVjnyWhU.png"
 import NavbarBox from './ui/navbarBox'
 import SearchForm from './ui/SearchForm'
 
-export default function Header() {
+export default function Header(props) {
+    const {search , setSearch , nav ,setNav}=props
     const data = [
         {
             id: 0,
@@ -32,13 +33,17 @@ export default function Header() {
         },
 
     ]
-
+    const onNav=(e)=>{
+        e.stopPropagation()
+        setNav("col-6 navs")
+    }
     return (
-        <header className="header_box">
+        <header className="header_box" onClick={()=>setSearch(false)}>
             <div className="rows">
-            <div className="toggle">
+            <div className="toggle" onClick={onNav}>
                         <span>
-                        <i class="fa-solid fa-bars"></i>                        </span>
+                        <i class="fa-solid fa-bars"></i>                        
+                        </span>
                     </div>
                 <div className="col-2">
                     <div className="logo_brand">
@@ -47,14 +52,14 @@ export default function Header() {
                         </Link>
                     </div>
                 </div>
-                <div className="col-6">
-                    <nav className="navbar">
-                        <NavbarBox data={data} />
+                <div className={nav} onClick={()=>setNav("col-6")}>
+                    <nav className="navbar" onClick={(e)=>e.stopPropagation()}>
+                        <NavbarBox setNav={setNav} data={data} />
                     </nav>
                    
                 </div>
                 <div className="col-4">
-                    <SearchForm />
+                    <SearchForm search={search} setSearch={setSearch}/>
 
                 </div>
             </div>
