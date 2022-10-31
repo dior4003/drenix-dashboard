@@ -1,25 +1,29 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-import Corusel from './ui/Coruserl'
+import React from "react";
+import { Link } from "react-router-dom";
+import Corusel from "./ui/Coruserl";
 
-export default function Section5() {
-
+export default function Section5({ data }) {
+  console.log(data);
   return (
-    <section className='section_5'>
+    <section className="section_5">
       <div className="first_title">
-        <h1>PROJECT CASE STUDY</h1>
+        <h1>{data ? data.title1 : ""}</h1>
       </div>
       <div className="second_title">
-        <h1>We are proud team of great project</h1>
+        <h1>{data ? data.title2 : ""}</h1>
       </div>
       <div className="corusel_section">
-        <Corusel />
+        <Corusel data={data ? data.corusel : []} />
       </div>
-      <div className="tpc-btn-wrap aos-init aos-animate" data-aos="fade-up" data-aos-delay="1900">
+      <div
+        className="tpc-btn-wrap aos-init aos-animate"
+        data-aos="fade-up"
+        data-aos-delay="1900"
+      >
         <Link className="tpc-btn" to="#a">
-          See More Projects
+          {data ? data.button : ""}
         </Link>
       </div>
     </section>
-  )
+  );
 }
