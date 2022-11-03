@@ -30,14 +30,14 @@ export default function Main() {
       });
   }, [lang]);
   useEffect(() => {
-    fetch(`https://drenix-back.herokuapp.com/api/posts`)
+    fetch(`https://drenix-back.herokuapp.com/`)
       .then((response) => response.json())
       // 4. Setting *dogImage* to the image url that we received from the response above
       .then((data) => {
         setPosts(data);
         // setLoading(false);
       });
-  }, [posts]);
+  }, []);
   const [nav, setNav] = useState("col-6");
   const [search, setSearch] = useState(false);
 

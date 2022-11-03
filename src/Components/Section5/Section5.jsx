@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import Corusel from "./ui/Coruserl";
 
 export default function Section5({ data }) {
-  console.log(data);
   return (
     <section className="section_5">
       <div className="first_title">

@@ -45,6 +45,6 @@
     ]
   },
   "devDependencies": {
-    "tsparticles": "^2.3.4"
+    "tsparticles": "^2.5.1"
   }
 }

@@ -5,7 +5,7 @@ import { ParticlesApp } from "./ui/particles";
 export default function Section8({ data }) {
   return (
     <section className="section_8">
-      <ParticlesApp />
+      <ParticlesApp/>
       <Corusel data={data.corusel ? data.corusel : []} />
       <div className="left_box">
         <div className="title">
