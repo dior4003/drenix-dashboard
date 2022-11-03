@@ -15,7 +15,9 @@ export default function Section5({ data }) {
       <div className="corusel_section">
         <Corusel data={data ? data.corusel : []} />
       </div>
-      <div
+      {data.button
+      ?(
+        <div
         className="tpc-btn-wrap aos-init aos-animate"
         data-aos="fade-up"
         data-aos-delay="1900"
@@ -24,6 +26,8 @@ export default function Section5({ data }) {
           {data ? data.button : ""}
         </Link>
       </div>
+      ):null}
+    
     </section>
   );
 }

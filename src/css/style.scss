@@ -802,8 +802,11 @@ a {
                 height: 100%;
                 z-index: -1;
                 transition: 0.6s all linear;
-
+                .logo{
+                  display: none;
+                }
                 .title {
+                  margin-top: 20px;
                   h2 {
                     text-align: center;
                     color: #fff;
@@ -1911,7 +1914,7 @@ a {
         }
 
         .card_ {
-          padding: 50px;
+          padding: 20px;
           text-align: center;
           height: 14rem;
           width: 14rem;
@@ -1919,7 +1922,6 @@ a {
           position: relative;
           display: flex;
           justify-content: center;
-          align-items: center;
           flex-direction: column;
           flex-wrap: nowrap;
           box-shadow: 0px 1px 2px 0px var(--card-shadow);
@@ -1938,7 +1940,7 @@ a {
             font-size: 12px;
           }
           .author {
-            padding: 10px;
+            padding: 10px 30px 10px 30px;
             margin-top: 0px;
             display: flex;
             justify-content: space-between;
@@ -2883,13 +2885,17 @@ a {
                 height: 100%;
                 z-index: -1;
                 transition: 0.6s all linear;
-
+                .logo{
+                  display: none;
+                }
                 .title {
+                  margin-top: 20px;
                   h2 {
                     text-align: center;
                     color: #fff;
                     z-index: 1;
                     transition: 0.2s all linear;
+
                   }
                 }
 
@@ -2898,6 +2904,7 @@ a {
                     color: #fff;
                     z-index: 1;
                     transition: 0.2s all linear;
+
                   }
                 }
               }
@@ -3978,7 +3985,7 @@ a {
         }
 
         .card_ {
-          padding: 50px;
+          padding: 20px;
           text-align: center;
           height: 14rem;
           width: 14rem;
@@ -3986,7 +3993,6 @@ a {
           position: relative;
           display: flex;
           justify-content: center;
-          align-items: center;
           flex-direction: column;
           flex-wrap: nowrap;
           box-shadow: 0px 1px 2px 0px var(--card-shadow);
@@ -4005,7 +4011,7 @@ a {
             font-size: 12px;
           }
           .author {
-            padding: 10px;
+            padding: 10px 30px 10px 30px;
             margin-top: 0px;
             display: flex;
             justify-content: space-between;
@@ -4952,13 +4958,18 @@ a {
                 height: 100%;
                 z-index: -1;
                 transition: 0.6s all linear;
+                .logo{
+                  display: none;
 
+                }
                 .title {
+                  margin-top: 20px;
                   h2 {
                     text-align: center;
                     color: #fff;
                     z-index: 1;
                     transition: 0.2s all linear;
+
                   }
                 }
 
@@ -4967,6 +4978,7 @@ a {
                     color: #fff;
                     z-index: 1;
                     transition: 0.2s all linear;
+
                   }
                 }
               }
@@ -6047,7 +6059,7 @@ a {
         }
 
         .card_ {
-          padding: 50px;
+          padding: 0px;
           text-align: center;
           height: 14rem;
           width: 14rem;
@@ -6055,7 +6067,6 @@ a {
           position: relative;
           display: flex;
           justify-content: center;
-          align-items: center;
           flex-direction: column;
           flex-wrap: nowrap;
           box-shadow: 0px 1px 2px 0px var(--card-shadow);
@@ -6074,7 +6085,7 @@ a {
             font-size: 12px;
           }
           .author {
-            padding: 10px;
+            padding: 10px 30px 10px 30px;
             margin-top: 0px;
             display: flex;
             justify-content: space-between;
@@ -7041,13 +7052,18 @@ a {
                 height: 100%;
                 z-index: -1;
                 transition: 0.6s all linear;
+                .logo{
+                  display: none;
 
+                }
                 .title {
+                  margin-top: 20px;
                   h2 {
                     text-align: center;
                     color: #fff;
                     z-index: 1;
                     transition: 0.2s all linear;
+
                   }
                 }
 
@@ -7056,6 +7072,7 @@ a {
                     color: #fff;
                     z-index: 1;
                     transition: 0.2s all linear;
+
                   }
                 }
               }
@@ -8160,7 +8177,7 @@ a {
         }
 
         .card_ {
-          padding: 50px;
+          padding: 20px;
           text-align: center;
           height: 14rem;
           width: 14rem;
@@ -8168,7 +8185,6 @@ a {
           position: relative;
           display: flex;
           justify-content: center;
-          align-items: center;
           flex-direction: column;
           flex-wrap: nowrap;
           box-shadow: 0px 1px 2px 0px var(--card-shadow);
@@ -8187,7 +8203,7 @@ a {
             font-size: 12px;
           }
           .author {
-            padding: 10px;
+            padding: 10px 30px 10px 30px;
             margin-top: 0px;
             display: flex;
             justify-content: space-between;
@@ -9180,13 +9196,19 @@ a {
                 height: 100%;
                 z-index: -1;
                 transition: 0.6s all linear;
+                .logo{
+                  display: none;
 
+                }
                 .title {
+                  margin-top: 15px;
                   h2 {
                     text-align: center;
                     color: #fff;
                     z-index: 1;
                     transition: 0.2s all linear;
+
+
                   }
                 }
 
@@ -9195,6 +9217,7 @@ a {
                     color: #fff;
                     z-index: 1;
                     transition: 0.2s all linear;
+
                   }
                 }
               }
@@ -10310,7 +10333,7 @@ a {
         }
 
         .card_ {
-          padding: 50px;
+          padding: 20px;
           text-align: center;
           height: 14rem;
           width: 14rem;
@@ -10337,7 +10360,7 @@ a {
             font-size: 12px;
           }
           .author {
-            padding: 10px;
+            padding: 10px 30px 10px 30px;
             margin-top: 0px;
             display: flex;
             justify-content: space-between;
@@ -11331,13 +11354,18 @@ a {
                 height: 100%;
                 z-index: -1;
                 transition: 0.6s all linear;
-
+                .logo{
+                  display: none;
+                }
                 .title {
+                  margin-top: 10px;
                   h2 {
                     text-align: center;
                     color: #fff;
                     z-index: 1;
                     transition: 0.2s all linear;
+                    
+
                   }
                 }
 
@@ -11346,6 +11374,8 @@ a {
                     color: #fff;
                     z-index: 1;
                     transition: 0.2s all linear;
+                   
+
                   }
                 }
               }
@@ -12466,7 +12496,7 @@ a {
         }
 
         .card_ {
-          padding: 50px;
+          padding: 20px;
           text-align: center;
           height: 14rem;
           width: 14rem;
@@ -12474,7 +12504,6 @@ a {
           position: relative;
           display: flex;
           justify-content: center;
-          align-items: center;
           flex-direction: column;
           flex-wrap: nowrap;
           box-shadow: 0px 1px 2px 0px var(--card-shadow);
@@ -12493,7 +12522,7 @@ a {
             font-size: 12px;
           }
           .author {
-            padding: 10px;
+            padding: 10px 30px 10px 30px;
             margin-top: 0px;
             display: flex;
             justify-content: space-between;

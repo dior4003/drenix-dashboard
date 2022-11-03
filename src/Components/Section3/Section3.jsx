@@ -1,9 +1,16 @@
 import React from "react";
 import img_1 from "../../images/ctiaxRXYSAeB.jpg";
 import img_2 from "../../images/5Y9VVobzMOQ2.png";
+import Video from "./ui/Video";
+import { useState } from "react";
 export default function Section3({ data }) {
+  const [video, setVideo]=useState(false)
   return (
     <div className="section_3">
+      {
+        video?<Video setVideo={setVideo}/>:null
+      }
+      
       <div className="row">
         <div className="col-6">
           <div className="img_box">
@@ -26,7 +33,7 @@ export default function Section3({ data }) {
           <div className="circle_1"></div>
           <div className="circle_2"></div>
           <div className="circle_3"></div>
-          <div className="play_btn">
+          <div className="play_btn" onClick={()=>setVideo(true)}>
             <i className="fa-solid fa-play"></i>
           </div>
         </div>
@@ -53,6 +60,7 @@ export default function Section3({ data }) {
                   <div className="line"></div>
                   <div className="left">
                     <div className="small">
+
                     </div>
                     <div className="author_title">
                       <h4>

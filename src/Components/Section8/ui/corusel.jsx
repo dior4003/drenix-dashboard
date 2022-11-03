@@ -3,17 +3,21 @@ import React, { useState, useEffect } from "react";
 const Card = (props) => {
   return (
     <li className="card_">
-      <h2>{props.first_title}</h2>
-      <p className="p">{props.title}</p>
-      <div className="author">
+      {props.move?null: <h2>{props.first_title}</h2>}
+     
+      <p className="p">{props.move?props.title:props.title.slice(0, 60)}</p>
+      {props.move?null:(
+        <div className="author">
         <div className="icon">
-          <img src={props.icon} alt="" />
+          <img src={`https://drenix-back.herokuapp.com/static/media/${props.icon}`} alt="" />
         </div>
         <div className="text">
           <h4>{props.name}</h4>
           <p>{props.spec}</p>
         </div>
-      </div>
+        </div>
+      )}
+     
     </li>
   );
 };
@@ -21,6 +25,7 @@ const Card = (props) => {
 export function Corusel({ data }) {
   const [moveClass, setMoveClass] = useState("");
   const [carouselItems, setCarouselItems] = useState(data);
+  const [move ,setMove]=useState(false)
 
   useEffect(() => {
     document.documentElement.style.setProperty("--num", carouselItems.length);
@@ -28,7 +33,7 @@ export function Corusel({ data }) {
   useEffect(() => {
     const interval = setInterval(() => {
       setMoveClass("prev");
-    }, 3000);
+    }, 10000);
 
     return () => {
       clearInterval(interval);
@@ -69,6 +74,8 @@ export function Corusel({ data }) {
       <ul
         onAnimationEnd={handleAnimationEnd}
         className={`${moveClass} carousel_`}
+        onMouseEnter={() => setMove(true)}
+        onMouseLeave={() => setMove(false)}
       >
         {carouselItems.map((t, index) => (
           <Card
@@ -78,6 +85,7 @@ export function Corusel({ data }) {
             first_title={t.first_title}
             name={t.name}
             spec={t.spec}
+            move={move}
           />
         ))}
       </ul>

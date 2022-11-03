@@ -781,6 +781,12 @@ a {
     z-index: -1;
     transition: 0.6s all linear;
   }
+  .elementor-section .row .col-3 a:hover .card_ .card_body .logo {
+    display: none;
+  }
+  .elementor-section .row .col-3 a:hover .card_ .card_body .title {
+    margin-top: 20px;
+  }
   .elementor-section .row .col-3 a:hover .card_ .card_body .title h2 {
     text-align: center;
     color: #fff;
@@ -1841,7 +1847,7 @@ a {
     animation-name: next;
   }
   .section_8 .carouselwrapper .carousel_ .card_ {
-    padding: 50px;
+    padding: 20px;
     text-align: center;
     height: 14rem;
     width: 14rem;
@@ -1849,7 +1855,6 @@ a {
     position: relative;
     display: flex;
     justify-content: center;
-    align-items: center;
     flex-direction: column;
     flex-wrap: nowrap;
     box-shadow: 0px 1px 2px 0px var(--card-shadow);
@@ -1869,7 +1874,7 @@ a {
     font-size: 12px;
   }
   .section_8 .carouselwrapper .carousel_ .card_ .author {
-    padding: 10px;
+    padding: 10px 30px 10px 30px;
     margin-top: 0px;
     display: flex;
     justify-content: space-between;
@@ -2821,6 +2826,12 @@ a {
     height: 100%;
     z-index: -1;
     transition: 0.6s all linear;
+  }
+  .elementor-section .row .col-3 a:hover .card_ .card_body .logo {
+    display: none;
+  }
+  .elementor-section .row .col-3 a:hover .card_ .card_body .title {
+    margin-top: 20px;
   }
   .elementor-section .row .col-3 a:hover .card_ .card_body .title h2 {
     text-align: center;
@@ -3870,7 +3881,7 @@ a {
     animation-name: next;
   }
   .section_8 .carouselwrapper .carousel_ .card_ {
-    padding: 50px;
+    padding: 20px;
     text-align: center;
     height: 14rem;
     width: 14rem;
@@ -3878,7 +3889,6 @@ a {
     position: relative;
     display: flex;
     justify-content: center;
-    align-items: center;
     flex-direction: column;
     flex-wrap: nowrap;
     box-shadow: 0px 1px 2px 0px var(--card-shadow);
@@ -3898,7 +3908,7 @@ a {
     font-size: 12px;
   }
   .section_8 .carouselwrapper .carousel_ .card_ .author {
-    padding: 10px;
+    padding: 10px 30px 10px 30px;
     margin-top: 0px;
     display: flex;
     justify-content: space-between;
@@ -4856,6 +4866,12 @@ a {
     height: 100%;
     z-index: -1;
     transition: 0.6s all linear;
+  }
+  .elementor-section .row .col-3 a:hover .card_ .card_body .logo {
+    display: none;
+  }
+  .elementor-section .row .col-3 a:hover .card_ .card_body .title {
+    margin-top: 20px;
   }
   .elementor-section .row .col-3 a:hover .card_ .card_body .title h2 {
     text-align: center;
@@ -5906,7 +5922,7 @@ a {
     animation-name: next;
   }
   .section_8 .carouselwrapper .carousel_ .card_ {
-    padding: 50px;
+    padding: 0px;
     text-align: center;
     height: 14rem;
     width: 14rem;
@@ -5914,7 +5930,6 @@ a {
     position: relative;
     display: flex;
     justify-content: center;
-    align-items: center;
     flex-direction: column;
     flex-wrap: nowrap;
     box-shadow: 0px 1px 2px 0px var(--card-shadow);
@@ -5934,7 +5949,7 @@ a {
     font-size: 12px;
   }
   .section_8 .carouselwrapper .carousel_ .card_ .author {
-    padding: 10px;
+    padding: 10px 30px 10px 30px;
     margin-top: 0px;
     display: flex;
     justify-content: space-between;
@@ -6912,6 +6927,12 @@ a {
     height: 100%;
     z-index: -1;
     transition: 0.6s all linear;
+  }
+  .elementor-section .row .col-3 a:hover .card_ .card_body .logo {
+    display: none;
+  }
+  .elementor-section .row .col-3 a:hover .card_ .card_body .title {
+    margin-top: 20px;
   }
   .elementor-section .row .col-3 a:hover .card_ .card_body .title h2 {
     text-align: center;
@@ -7989,7 +8010,7 @@ a {
     animation-name: next;
   }
   .section_8 .carouselwrapper .carousel_ .card_ {
-    padding: 50px;
+    padding: 20px;
     text-align: center;
     height: 14rem;
     width: 14rem;
@@ -7997,7 +8018,6 @@ a {
     position: relative;
     display: flex;
     justify-content: center;
-    align-items: center;
     flex-direction: column;
     flex-wrap: nowrap;
     box-shadow: 0px 1px 2px 0px var(--card-shadow);
@@ -8017,7 +8037,7 @@ a {
     font-size: 12px;
   }
   .section_8 .carouselwrapper .carousel_ .card_ .author {
-    padding: 10px;
+    padding: 10px 30px 10px 30px;
     margin-top: 0px;
     display: flex;
     justify-content: space-between;
@@ -9022,6 +9042,12 @@ a {
     height: 100%;
     z-index: -1;
     transition: 0.6s all linear;
+  }
+  .elementor-section .row .col-3 a:hover .card_ .card_body .logo {
+    display: none;
+  }
+  .elementor-section .row .col-3 a:hover .card_ .card_body .title {
+    margin-top: 15px;
   }
   .elementor-section .row .col-3 a:hover .card_ .card_body .title h2 {
     text-align: center;
@@ -10103,7 +10129,7 @@ a {
     animation-name: next;
   }
   .section_8 .carouselwrapper .carousel_ .card_ {
-    padding: 50px;
+    padding: 20px;
     text-align: center;
     height: 14rem;
     width: 14rem;
@@ -10131,7 +10157,7 @@ a {
     font-size: 12px;
   }
   .section_8 .carouselwrapper .carousel_ .card_ .author {
-    padding: 10px;
+    padding: 10px 30px 10px 30px;
     margin-top: 0px;
     display: flex;
     justify-content: space-between;
@@ -11137,6 +11163,12 @@ a {
     height: 100%;
     z-index: -1;
     transition: 0.6s all linear;
+  }
+  .elementor-section .row .col-3 a:hover .card_ .card_body .logo {
+    display: none;
+  }
+  .elementor-section .row .col-3 a:hover .card_ .card_body .title {
+    margin-top: 10px;
   }
   .elementor-section .row .col-3 a:hover .card_ .card_body .title h2 {
     text-align: center;
@@ -12224,7 +12256,7 @@ a {
     animation-name: next;
   }
   .section_8 .carouselwrapper .carousel_ .card_ {
-    padding: 50px;
+    padding: 20px;
     text-align: center;
     height: 14rem;
     width: 14rem;
@@ -12232,7 +12264,6 @@ a {
     position: relative;
     display: flex;
     justify-content: center;
-    align-items: center;
     flex-direction: column;
     flex-wrap: nowrap;
     box-shadow: 0px 1px 2px 0px var(--card-shadow);
@@ -12252,7 +12283,7 @@ a {
     font-size: 12px;
   }
   .section_8 .carouselwrapper .carousel_ .card_ .author {
-    padding: 10px;
+    padding: 10px 30px 10px 30px;
     margin-top: 0px;
     display: flex;
     justify-content: space-between;

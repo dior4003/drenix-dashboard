@@ -19,7 +19,7 @@ export default function Section7({ data }) {
                     key={i}
                     style={{
                       background: `url(https://drenix-back.herokuapp.com/static/media/${item.img})`,
-                      backgroundSize: "cover",
+                      backgroundSize: "contain"
                     }}
                     className="card"
                   >

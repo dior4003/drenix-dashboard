@@ -33,18 +33,24 @@ export default function Corusel({ data }) {
               }}
             >
               <div className="active"></div>
-              <div className="card_box">
-                <div className="left">
-                  <h1 className="title">{item.title}</h1>
-                  <span>{item.btn}</span>
+              {
+                item.title
+                ?(
+                  <div className="card_box">
+                  <div className="left">
+                    <h1 className="title">{item.title}</h1>
+                    <span>{item.btn}</span>
+                  </div>
+                  <div className="center">
+                    <p>{item.decr}</p>
+                  </div>
+                  <div className="buttons">
+                    <span>{"->"}</span>
+                  </div>
                 </div>
-                <div className="center">
-                  <p>{item.decr}</p>
-                </div>
-                <div className="buttons">
-                  <span>{"->"}</span>
-                </div>
-              </div>
+                ):null
+              }
+             
             </Card>
           </Slide>
         ))}
