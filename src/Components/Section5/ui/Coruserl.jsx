@@ -28,7 +28,8 @@ export default function Corusel({ data }) {
               className="card "
               style={{
                 background: `url(https://drenix-back.herokuapp.com/static/media/${item.img})`,
-                backgroundSize: "contain",
+                backgroundSize: "cover",
+                backgroundPosition: " top 60% center"
               }}
             >
               <div className="active"></div>

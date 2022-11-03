@@ -53,10 +53,6 @@ export default function Section3({ data }) {
                   <div className="line"></div>
                   <div className="left">
                     <div className="small">
-                      <img
-                        src="https://thepixelcurve.com/wp/techmax/wp-content/uploads/2022/01/SIG6439.png"
-                        alt=""
-                      />
                     </div>
                     <div className="author_title">
                       <h4>

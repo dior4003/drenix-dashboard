@@ -9,7 +9,7 @@
       name="description"
       content="Web site created using create-react-app"
     />
-    <!-- <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" /> -->
+    <link rel="icon" href="https://drenix-back.herokuapp.com/static/media/logo.jpg">
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
@@ -23,9 +23,23 @@
       referrerpolicy="no-referrer"
     />
 
-    <!-- <link rel="manifest" href="%PUBLIC_URL%/manifest.json" /> -->
-
-    <title>React App</title>
+    <title>Drenix Academy</title>
+    <script>
+      var tit = document.title;
+      var c = 0;
+      function writetitle(){
+        document.title = tit.substring(0,c);
+        if(c==tit.length){
+          c = 0;
+          setTimeout("writetitle()", 1000)
+        }else{
+          c++;
+          setTimeout("writetitle()", 200)
+        }
+      }
+    
+      writetitle()
+    </script>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>

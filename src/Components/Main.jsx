@@ -18,6 +18,7 @@ import Section9 from "./Section9";
 export default function Main() {
   // const [loading, setLoading] = useState(true);
   const [data, setData] = useState(null);
+  const [ posts , setPosts]=useState(null)
   const [lang, setLang] = useState("uz");
   useEffect(() => {
     fetch(`https://drenix-back.herokuapp.com/static/${lang}.json`)
@@ -28,7 +29,15 @@ export default function Main() {
         // setLoading(false);
       });
   }, [lang]);
-  console.log(data);
+  useEffect(() => {
+    fetch(`https://drenix-back.herokuapp.com/api/posts`)
+      .then((response) => response.json())
+      // 4. Setting *dogImage* to the image url that we received from the response above
+      .then((data) => {
+        setPosts(data);
+        // setLoading(false);
+      });
+  }, [posts]);
   const [nav, setNav] = useState("col-6");
   const [search, setSearch] = useState(false);
 
@@ -55,7 +64,7 @@ export default function Main() {
           <Section6 data={data.seaction6} />
           <Section7 data={data.sectoin7} />
           <Section8 data={data.section8} />
-          <Section9 />
+          {posts?<Section9 />:null}
           <Section10 data={data.section10} />
           <Footer data={data.footer} />
         </>

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 export default function Contact({ notif, datas }) {
   const [isValue, setIsValue] = useState("phone"),
     [data, setData] = useState({
@@ -11,7 +12,44 @@ export default function Contact({ notif, datas }) {
   const onSubmit = (e) => {
     e.preventDefault();
     console.log(data);
-    notif();
+    fetch('https://drenix-back.herokuapp.com/bot5777250834:AAGaNZDkl_Z8R-B6HonPYDV6_xJvqrM5ZSQ', {
+      method: 'post',
+      headers: {'Content-Type':'application/json'},
+      body: data
+    })
+    .then((result) => {
+      toast.success("Send message", {
+        position: "top-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "colored",
+      });
+    },
+    // Note: it's important to handle errors here
+    // instead of a catch() block so that we don't swallow
+    // exceptions from actual bugs in components.
+    (error) => {
+      toast.error("Send message", {
+        position: "top-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "colored",
+      });
+    })
+    setData({
+      phone: "",
+      userName: "",
+      name: "",
+      decr: "",
+    })
   };
   return (
     <div className="contact">
@@ -76,7 +114,7 @@ export default function Contact({ notif, datas }) {
                 id="noter-text-area"
                 name="textarea"
                 placeholder={datas.place2}
-                value={datas.decr}
+                value={data.decr}
                 onChange={(e) => setData({ ...data, decr: e.target.value })}
                 min={50}
                 required={true}
@@ -88,6 +126,7 @@ export default function Contact({ notif, datas }) {
           </div>
         </form>
       </div>
+      <ToastContainer />
     </div>
   );
 }
