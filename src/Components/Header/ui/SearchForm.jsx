@@ -26,7 +26,7 @@ export default function SearchForm({ search, setSearch, lang, setLang }) {
         <div className="box_text">
           <span className="text_muted">Free Consultant</span>
           <span className="phone">
-            <b>+998909999999</b>
+            <b>+998900078985</b>
           </span>
         </div>
         <div className="search_btns">
