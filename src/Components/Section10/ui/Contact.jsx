@@ -1,3 +1,4 @@
+import axios from "axios";
 import React, { useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -9,41 +10,43 @@ export default function Contact({ notif, datas }) {
       name: "",
       decr: "",
     });
+    const
+    headers = {
+     'Content-Type': 'application/json'
+   }
   const onSubmit = (e) => {
     e.preventDefault();
     console.log(data);
-    fetch('https://drenix-back.herokuapp.com/bot5777250834:AAGaNZDkl_Z8R-B6HonPYDV6_xJvqrM5ZSQ', {
-      method: 'post',
-      headers: {'Content-Type':'application/json'},
-      body: data
-    })
-    .then((result) => {
-      toast.success("Send message", {
-        position: "top-right",
-        autoClose: 5000,
-        hideProgressBar: false,
-        closeOnClick: true,
-        pauseOnHover: true,
-        draggable: true,
-        progress: undefined,
-        theme: "colored",
-      });
-    },
-    // Note: it's important to handle errors here
-    // instead of a catch() block so that we don't swallow
-    // exceptions from actual bugs in components.
-    (error) => {
-      toast.error("Send message", {
-        position: "top-right",
-        autoClose: 5000,
-        hideProgressBar: false,
-        closeOnClick: true,
-        pauseOnHover: true,
-        draggable: true,
-        progress: undefined,
-        theme: "colored",
-      });
-    })
+   
+    axios.post("https://drenix-back.herokuapp.com/bot5777250834:AAGaNZDkl_Z8R-B6HonPYDV6_xJvqrM5ZSQ", data, {
+        headers: headers
+      })
+      .then((response) => {
+        toast.success("Send message", {
+              position: "top-right",
+              autoClose: 5000,
+              hideProgressBar: false,
+              closeOnClick: true,
+              pauseOnHover: true,
+              draggable: true,
+              progress: undefined,
+              theme: "colored",
+            });
+            console.log(response);
+      })
+      .catch((error) => {
+        toast.error("Send message", {
+              position: "top-right",
+              autoClose: 5000,
+              hideProgressBar: false,
+              closeOnClick: true,
+              pauseOnHover: true,
+              draggable: true,
+              progress: undefined,
+              theme: "colored",
+            });
+            console.log(error);
+      })
     setData({
       phone: "",
       userName: "",
