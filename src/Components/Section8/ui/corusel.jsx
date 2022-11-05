@@ -5,7 +5,7 @@ const Card = (props) => {
     <li className="card_">
       {props.move?null: <h2>{props.first_title}</h2>}
      
-      <p className="p">{props.move?props.title:props.title.slice(0, 60)}</p>
+      <p className="p">{props.title}</p>
       {props.move?null:(
         <div className="author">
         <div className="icon">
@@ -25,7 +25,6 @@ const Card = (props) => {
 export function Corusel({ data }) {
   const [moveClass, setMoveClass] = useState("");
   const [carouselItems, setCarouselItems] = useState(data);
-  const [move ,setMove]=useState(false)
 
   useEffect(() => {
     document.documentElement.style.setProperty("--num", carouselItems.length);
@@ -74,8 +73,6 @@ export function Corusel({ data }) {
       <ul
         onAnimationEnd={handleAnimationEnd}
         className={`${moveClass} carousel_`}
-        onMouseEnter={() => setMove(true)}
-        onMouseLeave={() => setMove(false)}
       >
         {carouselItems.map((t, index) => (
           <Card
@@ -85,7 +82,6 @@ export function Corusel({ data }) {
             first_title={t.first_title}
             name={t.name}
             spec={t.spec}
-            move={move}
           />
         ))}
       </ul>

@@ -449,13 +449,20 @@ a {
       .col-2 {
         .logo_brand {
           width: 100%;
-          padding: 20px;
+          padding: 0px;
+          height: 90%;
           a {
             text-decoration: none;
             color: transparent;
-            img {
-              width: 120px;
-            }
+            width: 100px;
+            height: 100px;
+            margin: -10px auto 0px auto;
+            display: block;
+            background: url("https://drenix-back.herokuapp.com/static/media/logo.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+
+           
           }
         }
       }
@@ -1846,9 +1853,9 @@ a {
     .carouselwrapper {
       overflow: hidden;
       position: relative;
-      width: 31rem;
+      width: 50%;
       margin-left: auto;
-      margin-right: 50px;
+      margin-right: 20px;
       .ui {
         position: absolute;
         padding: 30px;
@@ -1916,12 +1923,12 @@ a {
         .card_ {
           padding: 20px;
           text-align: center;
-          height: 14rem;
-          width: 14rem;
+          height: 68%;
+          width: 48%;
           margin: 50px;
           position: relative;
           display: flex;
-          justify-content: center;
+          justify-content: space-around;
           flex-direction: column;
           flex-wrap: nowrap;
           box-shadow: 0px 1px 2px 0px var(--card-shadow);
@@ -1936,14 +1943,15 @@ a {
           }
           .p {
             text-decoration: underline;
-            line-height: 12px;
-            font-size: 12px;
+            line-height: 18px;
+            font-size: 18px;
+            
           }
           .author {
             padding: 10px 30px 10px 30px;
             margin-top: 0px;
             display: flex;
-            justify-content: space-between;
+            justify-content: center;
             .text {
               padding: 5px;
               h4 {
@@ -1970,36 +1978,37 @@ a {
               }
             }
           }
-          &::before {
-            content: "";
-            height: 15.9rem;
-            width: 13rem;
-            background-color: rgba(204, 204, 204, 0.464);
-            top: -0.9rem;
-            position: absolute;
-            left: 0.5rem;
-            z-index: -1;
-            border-radius: 6px;
-          }
-          &::after {
-            content: "";
-            height: 17.3rem;
-            width: 11.7rem;
-            background-color: rgba(204, 204, 204, 0.495);
-            top: -1.6rem;
-            position: absolute;
-            left: 1.2rem;
-            z-index: -1;
-            border-radius: 6px;
-          }
+          // &::before {
+          //   content: "";
+          //   height: 15.9rem;
+          //   width: 13rem;
+          //   background-color: rgba(204, 204, 204, 0.464);
+          //   top: -0.9rem;
+          //   position: absolute;
+          //   left: 0.5rem;
+          //   z-index: -1;
+          //   border-radius: 6px;
+          // }
+          // &::after {
+          //   content: "";
+          //   height: 17.3rem;
+          //   width: 11.7rem;
+          //   background-color: rgba(204, 204, 204, 0.495);
+          //   top: -1.6rem;
+          //   position: absolute;
+          //   left: 1.2rem;
+          //   z-index: -1;
+          //   border-radius: 6px;
+          // }
         }
       }
     }
     .left_box {
       position: absolute;
-      left: 16%;
+      left: 10%;
       top: 110px;
       display: flex;
+      width: 60%;
       justify-content: center;
       align-items: flex-start;
       flex-direction: column;
@@ -2013,9 +2022,9 @@ a {
         }
       }
       .decr {
-        width: 400px;
+        width: 50%;
         h1 {
-          font-size: 36px;
+          font-size: 30px;
           color: #fff;
           font-weight: 700;
           padding: 20px;
@@ -3917,9 +3926,9 @@ a {
     .carouselwrapper {
       overflow: hidden;
       position: relative;
-      width: 31rem;
+      width: 60%;
       margin-left: auto;
-      margin-right: 50px;
+      margin-right: 20px;
       .ui {
         position: absolute;
         padding: 30px;
@@ -3987,12 +3996,12 @@ a {
         .card_ {
           padding: 20px;
           text-align: center;
-          height: 14rem;
-          width: 14rem;
+          height: 68%;
+          width: 48%;
           margin: 50px;
           position: relative;
           display: flex;
-          justify-content: center;
+          justify-content: space-around;
           flex-direction: column;
           flex-wrap: nowrap;
           box-shadow: 0px 1px 2px 0px var(--card-shadow);
@@ -4007,14 +4016,15 @@ a {
           }
           .p {
             text-decoration: underline;
-            line-height: 12px;
-            font-size: 12px;
+            line-height: 18px;
+            font-size: 18px;
+            
           }
           .author {
             padding: 10px 30px 10px 30px;
             margin-top: 0px;
             display: flex;
-            justify-content: space-between;
+            justify-content: center;
             .text {
               padding: 5px;
               h4 {
@@ -4041,28 +4051,28 @@ a {
               }
             }
           }
-          &::before {
-            content: "";
-            height: 15.9rem;
-            width: 13rem;
-            background-color: rgba(204, 204, 204, 0.464);
-            top: -0.9rem;
-            position: absolute;
-            left: 0.5rem;
-            z-index: -1;
-            border-radius: 6px;
-          }
-          &::after {
-            content: "";
-            height: 17.3rem;
-            width: 11.7rem;
-            background-color: rgba(204, 204, 204, 0.495);
-            top: -1.6rem;
-            position: absolute;
-            left: 1.2rem;
-            z-index: -1;
-            border-radius: 6px;
-          }
+          // &::before {
+          //   content: "";
+          //   height: 15.9rem;
+          //   width: 13rem;
+          //   background-color: rgba(204, 204, 204, 0.464);
+          //   top: -0.9rem;
+          //   position: absolute;
+          //   left: 0.5rem;
+          //   z-index: -1;
+          //   border-radius: 6px;
+          // }
+          // &::after {
+          //   content: "";
+          //   height: 17.3rem;
+          //   width: 11.7rem;
+          //   background-color: rgba(204, 204, 204, 0.495);
+          //   top: -1.6rem;
+          //   position: absolute;
+          //   left: 1.2rem;
+          //   z-index: -1;
+          //   border-radius: 6px;
+          // }
         }
       }
     }
@@ -4071,6 +4081,7 @@ a {
       left: 10%;
       top: 110px;
       display: flex;
+      width: 60%;
       justify-content: center;
       align-items: flex-start;
       flex-direction: column;
@@ -5991,9 +6002,9 @@ a {
     .carouselwrapper {
       overflow: hidden;
       position: relative;
-      width: 31rem;
+      width: 40%;
       margin-left: auto;
-      margin-right: 50px;
+      margin-right: 20px;
       .ui {
         position: absolute;
         padding: 30px;
@@ -6059,14 +6070,14 @@ a {
         }
 
         .card_ {
-          padding: 0px;
+          padding: 20px;
           text-align: center;
-          height: 14rem;
-          width: 14rem;
+          height: 68%;
+          width: 95%;
           margin: 50px;
           position: relative;
           display: flex;
-          justify-content: center;
+          justify-content: space-around;
           flex-direction: column;
           flex-wrap: nowrap;
           box-shadow: 0px 1px 2px 0px var(--card-shadow);
@@ -6081,14 +6092,15 @@ a {
           }
           .p {
             text-decoration: underline;
-            line-height: 12px;
-            font-size: 12px;
+            line-height: 20px;
+            font-size: 20px;
+            
           }
           .author {
             padding: 10px 30px 10px 30px;
             margin-top: 0px;
             display: flex;
-            justify-content: space-between;
+            justify-content: center;
             .text {
               padding: 5px;
               h4 {
@@ -6115,28 +6127,28 @@ a {
               }
             }
           }
-          &::before {
-            content: "";
-            height: 15.9rem;
-            width: 13rem;
-            background-color: rgba(204, 204, 204, 0.464);
-            top: -0.9rem;
-            position: absolute;
-            left: 0.5rem;
-            z-index: -1;
-            border-radius: 6px;
-          }
-          &::after {
-            content: "";
-            height: 17.3rem;
-            width: 11.7rem;
-            background-color: rgba(204, 204, 204, 0.495);
-            top: -1.6rem;
-            position: absolute;
-            left: 1.2rem;
-            z-index: -1;
-            border-radius: 6px;
-          }
+          // &::before {
+          //   content: "";
+          //   height: 15.9rem;
+          //   width: 13rem;
+          //   background-color: rgba(204, 204, 204, 0.464);
+          //   top: -0.9rem;
+          //   position: absolute;
+          //   left: 0.5rem;
+          //   z-index: -1;
+          //   border-radius: 6px;
+          // }
+          // &::after {
+          //   content: "";
+          //   height: 17.3rem;
+          //   width: 11.7rem;
+          //   background-color: rgba(204, 204, 204, 0.495);
+          //   top: -1.6rem;
+          //   position: absolute;
+          //   left: 1.2rem;
+          //   z-index: -1;
+          //   border-radius: 6px;
+          // }
         }
       }
     }
@@ -6674,7 +6686,7 @@ a {
     width: 100%;
     background-color: #fff;
     margin: 0 auto;
-    height: 5rem;
+    height: 6rem;
     .rows {
       display: flex;
       justify-content: center;
@@ -8109,7 +8121,7 @@ a {
     .carouselwrapper {
       overflow: hidden;
       position: relative;
-      width: 31rem;
+      width: 50%;
       margin-left: auto;
       margin-right: auto;
       .ui {
@@ -8179,12 +8191,12 @@ a {
         .card_ {
           padding: 20px;
           text-align: center;
-          height: 14rem;
-          width: 14rem;
+          height: 68%;
+          width: 95%;
           margin: 50px;
           position: relative;
           display: flex;
-          justify-content: center;
+          justify-content: space-around;
           flex-direction: column;
           flex-wrap: nowrap;
           box-shadow: 0px 1px 2px 0px var(--card-shadow);
@@ -8199,14 +8211,15 @@ a {
           }
           .p {
             text-decoration: underline;
-            line-height: 12px;
+            line-height: 18px;
             font-size: 12px;
+            
           }
           .author {
             padding: 10px 30px 10px 30px;
             margin-top: 0px;
             display: flex;
-            justify-content: space-between;
+            justify-content: center;
             .text {
               padding: 5px;
               h4 {
@@ -8233,33 +8246,34 @@ a {
               }
             }
           }
-          &::before {
-            content: "";
-            height: 15.9rem;
-            width: 13rem;
-            background-color: rgba(204, 204, 204, 0.464);
-            top: -0.9rem;
-            position: absolute;
-            left: 0.5rem;
-            z-index: -1;
-            border-radius: 6px;
-          }
-          &::after {
-            content: "";
-            height: 17.3rem;
-            width: 11.7rem;
-            background-color: rgba(204, 204, 204, 0.495);
-            top: -1.6rem;
-            position: absolute;
-            left: 1.2rem;
-            z-index: -1;
-            border-radius: 6px;
-          }
+          // &::before {
+          //   content: "";
+          //   height: 15.9rem;
+          //   width: 13rem;
+          //   background-color: rgba(204, 204, 204, 0.464);
+          //   top: -0.9rem;
+          //   position: absolute;
+          //   left: 0.5rem;
+          //   z-index: -1;
+          //   border-radius: 6px;
+          // }
+          // &::after {
+          //   content: "";
+          //   height: 17.3rem;
+          //   width: 11.7rem;
+          //   background-color: rgba(204, 204, 204, 0.495);
+          //   top: -1.6rem;
+          //   position: absolute;
+          //   left: 1.2rem;
+          //   z-index: -1;
+          //   border-radius: 6px;
+          // }
         }
       }
     }
     .left_box {
       position: initial;
+      width: 100%;
       left: 4%;
       top: 110px;
       display: flex;
@@ -8827,9 +8841,13 @@ a {
           a {
             text-decoration: none;
             color: transparent;
-            img {
-              width: 100px;
-            }
+            width: 100px;
+            height: 100px;
+            margin: -5px auto 0px auto;
+            display: block;
+            background: url("https://drenix-back.herokuapp.com/static/media/logo.png");
+            background-repeat: no-repeat;
+            background-size: cover;
           }
         }
       }
@@ -10265,7 +10283,7 @@ a {
     .carouselwrapper {
       overflow: hidden;
       position: relative;
-      width: 31rem;
+      width: 70%;
       margin-left: auto;
       margin-right: auto;
       .ui {
@@ -10335,13 +10353,12 @@ a {
         .card_ {
           padding: 20px;
           text-align: center;
-          height: 14rem;
-          width: 14rem;
+          height: 68%;
+          width: 95%;
           margin: 50px;
           position: relative;
           display: flex;
-          justify-content: center;
-          align-items: center;
+          justify-content: space-around;
           flex-direction: column;
           flex-wrap: nowrap;
           box-shadow: 0px 1px 2px 0px var(--card-shadow);
@@ -10356,14 +10373,15 @@ a {
           }
           .p {
             text-decoration: underline;
-            line-height: 12px;
+            line-height: 18px;
             font-size: 12px;
+            
           }
           .author {
             padding: 10px 30px 10px 30px;
             margin-top: 0px;
             display: flex;
-            justify-content: space-between;
+            justify-content: center;
             .text {
               padding: 5px;
               h4 {
@@ -10390,33 +10408,34 @@ a {
               }
             }
           }
-          &::before {
-            content: "";
-            height: 15.9rem;
-            width: 13rem;
-            background-color: rgba(204, 204, 204, 0.464);
-            top: -0.9rem;
-            position: absolute;
-            left: 0.5rem;
-            z-index: -1;
-            border-radius: 6px;
-          }
-          &::after {
-            content: "";
-            height: 17.3rem;
-            width: 11.7rem;
-            background-color: rgba(204, 204, 204, 0.495);
-            top: -1.6rem;
-            position: absolute;
-            left: 1.2rem;
-            z-index: -1;
-            border-radius: 6px;
-          }
+          // &::before {
+          //   content: "";
+          //   height: 15.9rem;
+          //   width: 13rem;
+          //   background-color: rgba(204, 204, 204, 0.464);
+          //   top: -0.9rem;
+          //   position: absolute;
+          //   left: 0.5rem;
+          //   z-index: -1;
+          //   border-radius: 6px;
+          // }
+          // &::after {
+          //   content: "";
+          //   height: 17.3rem;
+          //   width: 11.7rem;
+          //   background-color: rgba(204, 204, 204, 0.495);
+          //   top: -1.6rem;
+          //   position: absolute;
+          //   left: 1.2rem;
+          //   z-index: -1;
+          //   border-radius: 6px;
+          // }
         }
       }
     }
     .left_box {
       position: initial;
+      width: 100%;
       left: 4%;
       top: 110px;
       display: flex;
@@ -10960,6 +10979,8 @@ a {
     background-color: #010c2a;
     margin: 0 auto;
     height: 5rem;
+    position: relative;
+    overflow: hidden;
     .rows {
       display: flex;
       justify-content: center;
@@ -10967,6 +10988,8 @@ a {
         width: 25%;
         display: flex;
         justify-content: center;
+        flex-direction: column;
+        flex-wrap: nowrap;
         align-items: center;
         span{
           color: #fff;
@@ -10985,9 +11008,13 @@ a {
           a {
             text-decoration: none;
             color: transparent;
-            img {
-              width: 40px;
-            }
+            width: 60px;
+            height: 60px;
+            margin: -10px auto 0px auto;
+            display: block;
+            background: url("https://drenix-back.herokuapp.com/static/media/logo.png");
+            background-repeat: no-repeat;
+            background-size: cover;
           }
         }
       }
@@ -12428,7 +12455,7 @@ a {
     .carouselwrapper {
       overflow: hidden;
       position: relative;
-      width: 15rem;
+      width: 90%;
       margin-left: auto;
       margin-right: auto;
       .ui {
@@ -12498,12 +12525,12 @@ a {
         .card_ {
           padding: 20px;
           text-align: center;
-          height: 14rem;
-          width: 14rem;
+          height: 68%;
+          width: 95%;
           margin: 50px;
           position: relative;
           display: flex;
-          justify-content: center;
+          justify-content: space-around;
           flex-direction: column;
           flex-wrap: nowrap;
           box-shadow: 0px 1px 2px 0px var(--card-shadow);
@@ -12518,8 +12545,9 @@ a {
           }
           .p {
             text-decoration: underline;
-            line-height: 12px;
+            line-height: 18px;
             font-size: 12px;
+
           }
           .author {
             padding: 10px 30px 10px 30px;
@@ -12552,33 +12580,34 @@ a {
               }
             }
           }
-          &::before {
-            content: "";
-            height: 15.9rem;
-            width: 13rem;
-            background-color: rgba(204, 204, 204, 0.464);
-            top: -0.9rem;
-            position: absolute;
-            left: 0.5rem;
-            z-index: -1;
-            border-radius: 6px;
-          }
-          &::after {
-            content: "";
-            height: 17.3rem;
-            width: 11.7rem;
-            background-color: rgba(204, 204, 204, 0.495);
-            top: -1.6rem;
-            position: absolute;
-            left: 1.2rem;
-            z-index: -1;
-            border-radius: 6px;
-          }
+          // &::before {
+          //   content: "";
+          //   height: 15.9rem;
+          //   width: 13rem;
+          //   background-color: rgba(204, 204, 204, 0.464);
+          //   top: -0.9rem;
+          //   position: absolute;
+          //   left: 0.5rem;
+          //   z-index: -1;
+          //   border-radius: 6px;
+          // }
+          // &::after {
+          //   content: "";
+          //   height: 17.3rem;
+          //   width: 11.7rem;
+          //   background-color: rgba(204, 204, 204, 0.495);
+          //   top: -1.6rem;
+          //   position: absolute;
+          //   left: 1.2rem;
+          //   z-index: -1;
+          //   border-radius: 6px;
+          // }
         }
       }
     }
     .left_box {
       position: initial;
+      width: 100%;
       left: 4%;
       top: 110px;
       display: flex;
@@ -12925,7 +12954,8 @@ a {
         .logo {
           padding: 0px 0px 0px 12px;
           img {
-            width: 60px;
+            width: 30px;
+            height: 30px;
           }
           h3 {
             font-size: 9px;

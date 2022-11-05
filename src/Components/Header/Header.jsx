@@ -22,7 +22,7 @@ export default function Header(props) {
           <div className="logo_brand">
             <Link top="/">
               <img
-                src={`https://drenix-back.herokuapp.com/static/media/${data.logo}`}
+                src={`https://drenix-back.herokuapp.com/static/media/`}
                 alt=""
                 className=""
               />

@@ -6,7 +6,7 @@ export default function LinkComponent({item}) {
     return (
         <div className="contact">
             <div className="logo">
-                {logo.type==="img" ? <img src={logo.url} alt="" /> : <h3>{logo.url}</h3>}
+                {logo.type==="logo" ? <img src={`https://drenix-back.herokuapp.com/static/media/logo.png`} alt="" /> : <h3>{logo.url}</h3>}
             </div>
             <ul className="list_group">
                 {links.map((items, i) => (

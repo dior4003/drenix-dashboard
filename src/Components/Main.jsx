@@ -64,7 +64,7 @@ export default function Main() {
           <Section6 data={data.seaction6} />
           <Section7 data={data.sectoin7} />
           <Section8 data={data.section8} />
-          {posts?<Section9 />:null}
+          {posts>0?<Section9 />:null}
           <Section10 data={data.section10} />
           <Footer data={data.footer} />
         </>

@@ -6,7 +6,7 @@ import { useState } from "react";
 export default function Section3({ data }) {
   const [video, setVideo]=useState(false)
   return (
-    <div className="section_3">
+    <div className="section_3" id="about">
       {
         video?<Video setVideo={setVideo}/>:null
       }

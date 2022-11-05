@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 export default function Section7({ data }) {
   return (
@@ -27,19 +26,19 @@ export default function Section7({ data }) {
                       <div className="shape">
                         <ul className="social_box">
                           <li>
-                            <Link to={item.facebook.link}>
+                            <a target="_blank" href={item.facebook.link.length>5?item.facebook.link:null}>
                               <i className={item.facebook.icon}></i>
-                            </Link>
+                            </a>
                           </li>
                           <li>
-                            <Link to={item.twitter.link}>
+                            <a target="_blank" href={item.twitter.link.length>5?item.twitter.link:null}>
                               <i className={item.twitter.icon}></i>
-                            </Link>
+                            </a>
                           </li>
                           <li>
-                            <Link to={item.youtube.link}>
+                            <a target="_blank" href={item.youtube.link.length>5?item.youtube.link:null}>
                               <i className={item.youtube.icon}></i>
-                            </Link>
+                            </a>
                           </li>
                         </ul>
                       </div>

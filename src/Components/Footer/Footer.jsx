@@ -27,7 +27,7 @@ export default function Footer({ data }) {
       </div>
       <hr />
       <div className="foo_bar">
-        <p>© Copyright 2022 Techmax All rights reserved.</p>
+        <p>© Copyright 2022 Drenix All rights reserved.</p>
         <ul className="social_box">
           {social.map((item, i) => (
             <li key={i}>

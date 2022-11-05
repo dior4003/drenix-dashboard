@@ -441,14 +441,19 @@ a {
   }
   .header_box .rows .col-2 .logo_brand {
     width: 100%;
-    padding: 20px;
+    padding: 0px;
+    height: 90%;
   }
   .header_box .rows .col-2 .logo_brand a {
     text-decoration: none;
     color: transparent;
-  }
-  .header_box .rows .col-2 .logo_brand a img {
-    width: 120px;
+    width: 100px;
+    height: 100px;
+    margin: -10px auto 0px auto;
+    display: block;
+    background: url("https://drenix-back.herokuapp.com/static/media/logo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   .header_box .rows .col-6 .navbar {
     width: 80%;
@@ -1780,9 +1785,9 @@ a {
   .section_8 .carouselwrapper {
     overflow: hidden;
     position: relative;
-    width: 31rem;
+    width: 50%;
     margin-left: auto;
-    margin-right: 50px;
+    margin-right: 20px;
   }
   .section_8 .carouselwrapper .ui {
     position: absolute;
@@ -1849,12 +1854,12 @@ a {
   .section_8 .carouselwrapper .carousel_ .card_ {
     padding: 20px;
     text-align: center;
-    height: 14rem;
-    width: 14rem;
+    height: 68%;
+    width: 48%;
     margin: 50px;
     position: relative;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     flex-direction: column;
     flex-wrap: nowrap;
     box-shadow: 0px 1px 2px 0px var(--card-shadow);
@@ -1870,14 +1875,14 @@ a {
   }
   .section_8 .carouselwrapper .carousel_ .card_ .p {
     text-decoration: underline;
-    line-height: 12px;
-    font-size: 12px;
+    line-height: 18px;
+    font-size: 18px;
   }
   .section_8 .carouselwrapper .carousel_ .card_ .author {
     padding: 10px 30px 10px 30px;
     margin-top: 0px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
   }
   .section_8 .carouselwrapper .carousel_ .card_ .author .text {
     padding: 5px;
@@ -1904,33 +1909,12 @@ a {
     width: 30px;
     height: 30px;
   }
-  .section_8 .carouselwrapper .carousel_ .card_::before {
-    content: "";
-    height: 15.9rem;
-    width: 13rem;
-    background-color: rgba(204, 204, 204, 0.464);
-    top: -0.9rem;
-    position: absolute;
-    left: 0.5rem;
-    z-index: -1;
-    border-radius: 6px;
-  }
-  .section_8 .carouselwrapper .carousel_ .card_::after {
-    content: "";
-    height: 17.3rem;
-    width: 11.7rem;
-    background-color: rgba(204, 204, 204, 0.495);
-    top: -1.6rem;
-    position: absolute;
-    left: 1.2rem;
-    z-index: -1;
-    border-radius: 6px;
-  }
   .section_8 .left_box {
     position: absolute;
-    left: 16%;
+    left: 10%;
     top: 110px;
     display: flex;
+    width: 60%;
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
@@ -1943,10 +1927,10 @@ a {
     padding: 20px;
   }
   .section_8 .left_box .decr {
-    width: 400px;
+    width: 50%;
   }
   .section_8 .left_box .decr h1 {
-    font-size: 36px;
+    font-size: 30px;
     color: #fff;
     font-weight: 700;
     padding: 20px;
@@ -3814,9 +3798,9 @@ a {
   .section_8 .carouselwrapper {
     overflow: hidden;
     position: relative;
-    width: 31rem;
+    width: 60%;
     margin-left: auto;
-    margin-right: 50px;
+    margin-right: 20px;
   }
   .section_8 .carouselwrapper .ui {
     position: absolute;
@@ -3883,12 +3867,12 @@ a {
   .section_8 .carouselwrapper .carousel_ .card_ {
     padding: 20px;
     text-align: center;
-    height: 14rem;
-    width: 14rem;
+    height: 68%;
+    width: 48%;
     margin: 50px;
     position: relative;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     flex-direction: column;
     flex-wrap: nowrap;
     box-shadow: 0px 1px 2px 0px var(--card-shadow);
@@ -3904,14 +3888,14 @@ a {
   }
   .section_8 .carouselwrapper .carousel_ .card_ .p {
     text-decoration: underline;
-    line-height: 12px;
-    font-size: 12px;
+    line-height: 18px;
+    font-size: 18px;
   }
   .section_8 .carouselwrapper .carousel_ .card_ .author {
     padding: 10px 30px 10px 30px;
     margin-top: 0px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
   }
   .section_8 .carouselwrapper .carousel_ .card_ .author .text {
     padding: 5px;
@@ -3938,33 +3922,12 @@ a {
     width: 30px;
     height: 30px;
   }
-  .section_8 .carouselwrapper .carousel_ .card_::before {
-    content: "";
-    height: 15.9rem;
-    width: 13rem;
-    background-color: rgba(204, 204, 204, 0.464);
-    top: -0.9rem;
-    position: absolute;
-    left: 0.5rem;
-    z-index: -1;
-    border-radius: 6px;
-  }
-  .section_8 .carouselwrapper .carousel_ .card_::after {
-    content: "";
-    height: 17.3rem;
-    width: 11.7rem;
-    background-color: rgba(204, 204, 204, 0.495);
-    top: -1.6rem;
-    position: absolute;
-    left: 1.2rem;
-    z-index: -1;
-    border-radius: 6px;
-  }
   .section_8 .left_box {
     position: absolute;
     left: 10%;
     top: 110px;
     display: flex;
+    width: 60%;
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
@@ -5855,9 +5818,9 @@ a {
   .section_8 .carouselwrapper {
     overflow: hidden;
     position: relative;
-    width: 31rem;
+    width: 40%;
     margin-left: auto;
-    margin-right: 50px;
+    margin-right: 20px;
   }
   .section_8 .carouselwrapper .ui {
     position: absolute;
@@ -5922,14 +5885,14 @@ a {
     animation-name: next;
   }
   .section_8 .carouselwrapper .carousel_ .card_ {
-    padding: 0px;
+    padding: 20px;
     text-align: center;
-    height: 14rem;
-    width: 14rem;
+    height: 68%;
+    width: 95%;
     margin: 50px;
     position: relative;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     flex-direction: column;
     flex-wrap: nowrap;
     box-shadow: 0px 1px 2px 0px var(--card-shadow);
@@ -5945,14 +5908,14 @@ a {
   }
   .section_8 .carouselwrapper .carousel_ .card_ .p {
     text-decoration: underline;
-    line-height: 12px;
-    font-size: 12px;
+    line-height: 20px;
+    font-size: 20px;
   }
   .section_8 .carouselwrapper .carousel_ .card_ .author {
     padding: 10px 30px 10px 30px;
     margin-top: 0px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
   }
   .section_8 .carouselwrapper .carousel_ .card_ .author .text {
     padding: 5px;
@@ -5978,28 +5941,6 @@ a {
   .section_8 .carouselwrapper .carousel_ .card_ .author .icon img {
     width: 30px;
     height: 30px;
-  }
-  .section_8 .carouselwrapper .carousel_ .card_::before {
-    content: "";
-    height: 15.9rem;
-    width: 13rem;
-    background-color: rgba(204, 204, 204, 0.464);
-    top: -0.9rem;
-    position: absolute;
-    left: 0.5rem;
-    z-index: -1;
-    border-radius: 6px;
-  }
-  .section_8 .carouselwrapper .carousel_ .card_::after {
-    content: "";
-    height: 17.3rem;
-    width: 11.7rem;
-    background-color: rgba(204, 204, 204, 0.495);
-    top: -1.6rem;
-    position: absolute;
-    left: 1.2rem;
-    z-index: -1;
-    border-radius: 6px;
   }
   .section_8 .left_box {
     position: absolute;
@@ -6557,7 +6498,7 @@ a {
     width: 100%;
     background-color: #fff;
     margin: 0 auto;
-    height: 5rem;
+    height: 6rem;
   }
   .header_box .rows {
     display: flex;
@@ -7943,7 +7884,7 @@ a {
   .section_8 .carouselwrapper {
     overflow: hidden;
     position: relative;
-    width: 31rem;
+    width: 50%;
     margin-left: auto;
     margin-right: auto;
   }
@@ -8012,12 +7953,12 @@ a {
   .section_8 .carouselwrapper .carousel_ .card_ {
     padding: 20px;
     text-align: center;
-    height: 14rem;
-    width: 14rem;
+    height: 68%;
+    width: 95%;
     margin: 50px;
     position: relative;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     flex-direction: column;
     flex-wrap: nowrap;
     box-shadow: 0px 1px 2px 0px var(--card-shadow);
@@ -8033,14 +7974,14 @@ a {
   }
   .section_8 .carouselwrapper .carousel_ .card_ .p {
     text-decoration: underline;
-    line-height: 12px;
+    line-height: 18px;
     font-size: 12px;
   }
   .section_8 .carouselwrapper .carousel_ .card_ .author {
     padding: 10px 30px 10px 30px;
     margin-top: 0px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
   }
   .section_8 .carouselwrapper .carousel_ .card_ .author .text {
     padding: 5px;
@@ -8067,30 +8008,9 @@ a {
     width: 30px;
     height: 30px;
   }
-  .section_8 .carouselwrapper .carousel_ .card_::before {
-    content: "";
-    height: 15.9rem;
-    width: 13rem;
-    background-color: rgba(204, 204, 204, 0.464);
-    top: -0.9rem;
-    position: absolute;
-    left: 0.5rem;
-    z-index: -1;
-    border-radius: 6px;
-  }
-  .section_8 .carouselwrapper .carousel_ .card_::after {
-    content: "";
-    height: 17.3rem;
-    width: 11.7rem;
-    background-color: rgba(204, 204, 204, 0.495);
-    top: -1.6rem;
-    position: absolute;
-    left: 1.2rem;
-    z-index: -1;
-    border-radius: 6px;
-  }
   .section_8 .left_box {
     position: initial;
+    width: 100%;
     left: 4%;
     top: 110px;
     display: flex;
@@ -8683,9 +8603,13 @@ a {
   .header_box .rows .col-2 .logo_brand a {
     text-decoration: none;
     color: transparent;
-  }
-  .header_box .rows .col-2 .logo_brand a img {
     width: 100px;
+    height: 100px;
+    margin: -5px auto 0px auto;
+    display: block;
+    background: url("https://drenix-back.herokuapp.com/static/media/logo.png");
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   .header_box .rows .col-6 {
     display: block;
@@ -10062,7 +9986,7 @@ a {
   .section_8 .carouselwrapper {
     overflow: hidden;
     position: relative;
-    width: 31rem;
+    width: 70%;
     margin-left: auto;
     margin-right: auto;
   }
@@ -10131,13 +10055,12 @@ a {
   .section_8 .carouselwrapper .carousel_ .card_ {
     padding: 20px;
     text-align: center;
-    height: 14rem;
-    width: 14rem;
+    height: 68%;
+    width: 95%;
     margin: 50px;
     position: relative;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-around;
     flex-direction: column;
     flex-wrap: nowrap;
     box-shadow: 0px 1px 2px 0px var(--card-shadow);
@@ -10153,14 +10076,14 @@ a {
   }
   .section_8 .carouselwrapper .carousel_ .card_ .p {
     text-decoration: underline;
-    line-height: 12px;
+    line-height: 18px;
     font-size: 12px;
   }
   .section_8 .carouselwrapper .carousel_ .card_ .author {
     padding: 10px 30px 10px 30px;
     margin-top: 0px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
   }
   .section_8 .carouselwrapper .carousel_ .card_ .author .text {
     padding: 5px;
@@ -10187,30 +10110,9 @@ a {
     width: 30px;
     height: 30px;
   }
-  .section_8 .carouselwrapper .carousel_ .card_::before {
-    content: "";
-    height: 15.9rem;
-    width: 13rem;
-    background-color: rgba(204, 204, 204, 0.464);
-    top: -0.9rem;
-    position: absolute;
-    left: 0.5rem;
-    z-index: -1;
-    border-radius: 6px;
-  }
-  .section_8 .carouselwrapper .carousel_ .card_::after {
-    content: "";
-    height: 17.3rem;
-    width: 11.7rem;
-    background-color: rgba(204, 204, 204, 0.495);
-    top: -1.6rem;
-    position: absolute;
-    left: 1.2rem;
-    z-index: -1;
-    border-radius: 6px;
-  }
   .section_8 .left_box {
     position: initial;
+    width: 100%;
     left: 4%;
     top: 110px;
     display: flex;
@@ -10775,6 +10677,8 @@ a {
     background-color: #010c2a;
     margin: 0 auto;
     height: 5rem;
+    position: relative;
+    overflow: hidden;
   }
   .header_box .rows {
     display: flex;
@@ -10784,6 +10688,8 @@ a {
     width: 25%;
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
     align-items: center;
   }
   .header_box .rows .toggle span {
@@ -10803,9 +10709,13 @@ a {
   .header_box .rows .col-2 .logo_brand a {
     text-decoration: none;
     color: transparent;
-  }
-  .header_box .rows .col-2 .logo_brand a img {
-    width: 40px;
+    width: 60px;
+    height: 60px;
+    margin: -10px auto 0px auto;
+    display: block;
+    background: url("https://drenix-back.herokuapp.com/static/media/logo.png");
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   .header_box .rows .col-6 {
     display: block;
@@ -12189,7 +12099,7 @@ a {
   .section_8 .carouselwrapper {
     overflow: hidden;
     position: relative;
-    width: 15rem;
+    width: 90%;
     margin-left: auto;
     margin-right: auto;
   }
@@ -12258,12 +12168,12 @@ a {
   .section_8 .carouselwrapper .carousel_ .card_ {
     padding: 20px;
     text-align: center;
-    height: 14rem;
-    width: 14rem;
+    height: 68%;
+    width: 95%;
     margin: 50px;
     position: relative;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     flex-direction: column;
     flex-wrap: nowrap;
     box-shadow: 0px 1px 2px 0px var(--card-shadow);
@@ -12279,7 +12189,7 @@ a {
   }
   .section_8 .carouselwrapper .carousel_ .card_ .p {
     text-decoration: underline;
-    line-height: 12px;
+    line-height: 18px;
     font-size: 12px;
   }
   .section_8 .carouselwrapper .carousel_ .card_ .author {
@@ -12313,30 +12223,9 @@ a {
     width: 30px;
     height: 30px;
   }
-  .section_8 .carouselwrapper .carousel_ .card_::before {
-    content: "";
-    height: 15.9rem;
-    width: 13rem;
-    background-color: rgba(204, 204, 204, 0.464);
-    top: -0.9rem;
-    position: absolute;
-    left: 0.5rem;
-    z-index: -1;
-    border-radius: 6px;
-  }
-  .section_8 .carouselwrapper .carousel_ .card_::after {
-    content: "";
-    height: 17.3rem;
-    width: 11.7rem;
-    background-color: rgba(204, 204, 204, 0.495);
-    top: -1.6rem;
-    position: absolute;
-    left: 1.2rem;
-    z-index: -1;
-    border-radius: 6px;
-  }
   .section_8 .left_box {
     position: initial;
+    width: 100%;
     left: 4%;
     top: 110px;
     display: flex;
@@ -12665,7 +12554,8 @@ a {
     padding: 0px 0px 0px 12px;
   }
   .footer .links .contact .logo img {
-    width: 60px;
+    width: 30px;
+    height: 30px;
   }
   .footer .links .contact .logo h3 {
     font-size: 9px;
