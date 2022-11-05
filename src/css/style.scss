@@ -1245,6 +1245,7 @@ a {
         .card_item {
           width: 300px;
           height: 300px;
+          transition: 0.3s all linear;
           display: flex;
           justify-content: center;
           border-radius: 8px;
@@ -1284,8 +1285,9 @@ a {
             }
           }
           &:hover {
-            margin-top: -15px;
             transition: 0.3s all linear;
+            background-size: 150% 150%;
+            background-position: center center;
           }
         }
       }
@@ -3315,6 +3317,7 @@ a {
         .card_item {
           width: 270px;
           height: 270px;
+          transition: 0.3s all linear;
           display: flex;
           justify-content: center;
           border-radius: 8px;
@@ -3354,7 +3357,8 @@ a {
             }
           }
           &:hover {
-            margin-top: -15px;
+            background-size: 150% 150%;
+            background-position: center center;
             transition: 0.3s all linear;
           }
         }
@@ -5389,6 +5393,7 @@ a {
         .card_item {
           width: 440px;
           height: 440px;
+          transition: 0.3s all linear;
           margin-top: 50px;
           display: flex;
           justify-content: center;
@@ -5429,7 +5434,8 @@ a {
             }
           }
           &:hover {
-            margin-top: -15px;
+            background-size: 150% 150%;
+            background-position: center center;
             transition: 0.3s all linear;
           }
         }
@@ -7501,6 +7507,7 @@ a {
           width: 440px;
           height: 440px;
           margin-top: 50px;
+          transition: 0.3s all linear;
           display: flex;
           justify-content: center;
           border-radius: 8px;
@@ -7540,7 +7547,8 @@ a {
             }
           }
           &:hover {
-            margin-top: -15px;
+            background-size: 150% 150%;
+            background-position: center center;
             transition: 0.3s all linear;
           }
         }
@@ -9655,6 +9663,7 @@ a {
         .card_item {
           width: 440px;
           height: 440px;
+          transition: 0.3s all linear;
           margin-top: 50px;
           display: flex;
           justify-content: center;
@@ -9695,7 +9704,8 @@ a {
             }
           }
           &:hover {
-            margin-top: -15px;
+            background-size: 150% 150%;
+            background-position: center center;
             transition: 0.3s all linear;
           }
         }
@@ -11823,6 +11833,7 @@ a {
           width: 250px;
           height: 250px;
           margin-top: 50px;
+          transition: 0.3s all linear;
           display: flex;
           justify-content: center;
           border-radius: 8px;
@@ -11862,7 +11873,8 @@ a {
             }
           }
           &:hover {
-            margin-top: -15px;
+            background-size: 150% 150%;
+            background-position: center center;
             transition: 0.3s all linear;
           }
         }
