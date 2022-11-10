@@ -1,11 +1,22 @@
-import React from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { BrowserRouter } from "react-router-dom";
-import Main from "./Components";
+import { AuthContext } from "./Components/Hooks/context";
+import { Main } from "./Components/Main";
 function App() {
+  const [isLogin, setIsLogin] = useState(useContext(AuthContext));
+
+  useEffect(
+    function () {
+      localStorage.getItem("auth") ? setIsLogin(true) : setIsLogin(false);
+    },
+    [setIsLogin],
+  );
   return (
-    <BrowserRouter>
-      <Main />
-    </BrowserRouter>
+    <AuthContext.Provider value={{ isLogin, setIsLogin }}>
+      <BrowserRouter>
+        <Main />
+      </BrowserRouter>
+    </AuthContext.Provider>
   );
 }
 

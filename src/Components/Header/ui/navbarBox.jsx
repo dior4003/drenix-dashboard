@@ -10,7 +10,6 @@ export default function NavbarBox({ data }) {
             <span>
               <b>{item.title.toUpperCase()}</b>
             </span>
-            <i className={item.icon}></i>
           </li>
         </Link>
       ))}
