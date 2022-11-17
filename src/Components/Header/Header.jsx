@@ -4,7 +4,8 @@ import NavbarBox from "./ui/navbarBox";
 import SearchForm from "./ui/SearchForm";
 
 export default function Header(props) {
-  const { search, setSearch, nav, setNav, data, lang, setLang } = props;
+  const { search, setSearch, nav, setNav, data, lang, setLang ,upd } = props;
+  
 
   const onNav = (e) => {
     e.stopPropagation();
@@ -21,25 +22,23 @@ export default function Header(props) {
         <div className="col-2">
           <div className="logo_brand">
             <Link top="/">
-              <img
-                src={`https://drenix-back.herokuapp.com/static/media/`}
-                alt=""
-                className=""
-              />
+              
             </Link>
           </div>
         </div>
         <div className={nav} onClick={() => setNav("col-6")}>
           <nav className="navbar" onClick={(e) => e.stopPropagation()}>
-            <NavbarBox setNav={setNav} data={data.links} />
+            <NavbarBox setNav={setNav} data={data.links} upd={upd} />
           </nav>
         </div>
         <div className="col-4">
           <SearchForm
+            data={data}
             search={search}
             setSearch={setSearch}
             lang={lang}
             setLang={setLang}
+            upd={upd}
           />
         </div>
       </div>

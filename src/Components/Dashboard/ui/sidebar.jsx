@@ -9,6 +9,66 @@ export default function Sidebar() {
     localStorage.removeItem("auth");
     setIsLogin(false);
   };
+  const data =[
+    {
+      name:"Dashboard",
+      menus:[
+        {
+          name:"Xabarlar",
+          link:"/massage"
+        },
+        {
+          name:"Savollar",
+          link:"/questions"
+        },
+        {
+          name:"Bildirishnomalar",
+          link:"/notifications"
+        },
+
+      ]
+    },
+    {
+      name:"Tahrirlash",
+      menus:[
+        {
+          name:"Matnlarni tahrirlash",
+          link:"/edit-text"
+        },
+        {
+          name:"Medialarni tahrirlash",
+          link:"/edit-media"
+        },
+        {
+          name:"Bloklarni tahrirlaah",
+          link:"/edit-section"
+        },
+
+      ]
+    },
+    {
+      name:"Galereya",
+      menus:[
+        {
+          name:"Xabarlar",
+          link:"/"
+        },
+        {
+          name:"Savollar",
+          link:"/"
+        },
+        {
+          name:"Bildirishnomalar",
+          link:"/"
+        },
+
+      ]
+    },
+    {
+      name:"Yuklamalar",
+     
+    }
+  ];
   return (
     <div className='sidebar'>
       <div className='logo_icon'>
@@ -21,11 +81,11 @@ export default function Sidebar() {
         </button>
       </div>
       <ul className='dash_list'>
-        <SidebarItem />
-        <SidebarItem />
-        <SidebarItem />
-        <SidebarItem />
-        <SidebarItem />
+        {data.map((item ,i )=>(
+           <SidebarItem data={item} key={i}/>
+        ))}
+       
+        
       </ul>
     </div>
   );

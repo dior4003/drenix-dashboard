@@ -1,6 +1,7 @@
 import React from "react";
+import { useState } from "react";
 
-export default function SearchForm({ search, setSearch, lang, setLang }) {
+export default function SearchForm({ search, setSearch, lang, setLang ,data ,upd}) {
   const hendlSubmit = (e) => {
     e.preventDeafault();
     e.stopPropagation();
@@ -9,6 +10,9 @@ export default function SearchForm({ search, setSearch, lang, setLang }) {
     e.stopPropagation();
     setSearch(!search);
   };
+  const [tel, setTel]=useState(data.phone)
+  const [text ,setText]=useState(data.phone_txt)
+
   const handleLang = (e) => {
     e.stopPropagation();
     if (lang === "uz") {
@@ -24,9 +28,30 @@ export default function SearchForm({ search, setSearch, lang, setLang }) {
           <i className="fa-solid fa-phone text-primary fs-5"></i>
         </span>
         <div className="box_text">
-          <span className="text_muted">Free Consultant</span>
+          <span className="text_muted">{upd? (
+          <input 
+          className="edit_input" 
+          style={{width:`${data.phone_txt.length*10}px`}} 
+          type="text" 
+          value={text}
+          onChange={(e)=>setText(e.target.value)}
+          />)
+          :data.phone_txt
+          }
+          </span>
           <span className="phone">
-            <b>+998900078985</b>
+            <b>{upd? (
+            <input 
+            className="edit_input" 
+            style={{width:`${data.phone.length*10}px`}} 
+            type="text" 
+            value={tel}
+            onChange={(e)=>setTel(e.target.value)}
+            />
+            )
+            :data.phone
+            }
+            </b>
           </span>
         </div>
         <div className="search_btns">

@@ -16,8 +16,8 @@ export default function Login() {
         <form onSubmit={hendleSubmit}>
           <div className='con'>
             <header className='head-form'>
-              <h2>Log In</h2>
-              <p>login here using your username and password</p>
+              <h2>Kirish</h2>
+              <p>Drenix Academy admin paneliga kirish</p>
             </header>
             <br />
             <div className='field-set'>
@@ -28,7 +28,7 @@ export default function Login() {
                 className='form-input'
                 id='txt-input'
                 type='text'
-                placeholder='@UserName'
+                placeholder='@Foydalanuvchi nomi'
                 required
               />
 
@@ -40,7 +40,7 @@ export default function Login() {
               <input
                 className='form-input'
                 type='password'
-                placeholder='Password'
+                placeholder='Parol'
                 id='pwd'
                 name='password'
                 required
@@ -55,11 +55,11 @@ export default function Login() {
               </span>
 
               <br />
-              <button className='btn log-in'> Log In </button>
+              <button className='btn log-in'> Kirish </button>
             </div>
 
             <div className='other'>
-              <button className='btn submits frgt-pass'>Forgot Password</button>
+              <button className='btn submits frgt-pass'>Parolni tiklash</button>
             </div>
           </div>
         </form>

@@ -1,13 +1,16 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-export default function MainSection({ data }) {
+export default function MainSection({ data ,upd}) {
   return (
     <div className='main_box'>
       <div
         className='main_box_background'
         style={{
-          background: `url(https://drenix-back.herokuapp.com/ststic/media/zvGMcvWppYef.jpeg)`,
+          background: `url(https://drenix-back.herokuapp.com/static/media/zvGMcvWppYef.jpeg)`,
+          backgroundPosition:"center center",
+          backgroundRepeat:"no-repeat",
+          backgroundSize:"cover"
         }}>
         <div className='shape'></div>
         <div className='container'>
@@ -15,21 +18,23 @@ export default function MainSection({ data }) {
             <div className='col-xs-6'>
               <div className='hero-content'>
                 <h3 className='sub-title aos-init aos-animate'>
-                  {data.title1}
+                {upd?(<input className="edit_input" style={{width:`${data.title1.length*10}px`}} type="text" value={data.title1}/>):data.title1}
+                
                 </h3>
-                <h2 className='title aos-init aos-animate'>{data.title2}</h2>
+                <h2 className='title aos-init aos-animate'>{upd?(<input className="edit_input" style={{width:`${data.title2.length*10}px`}} type="text" value={data.title2}/>):data.title2}</h2>
                 <p
                   data-aos-delay='1400'
                   data-aos='fade-up'
                   className='aos-init aos-animate'>
-                  {data.title3}
+                  {upd?(<input className="edit_input" style={{width:`${data.title3.length*9}px`}} type="text" value={data.title3}/>):data.title3}
                 </p>
                 <div
                   className='tpc-btn-wrap aos-init aos-animate'
                   data-aos='fade-up'
                   data-aos-delay='1900'>
                   <Link className='tpc-btn' to='#a'>
-                    {data.button}
+                  {upd?(<input className="edit_input" style={{width:`${data.button.length*10}px`, }} type="text" value={data.button}/>):data.button}
+                   
                   </Link>
                 </div>
               </div>

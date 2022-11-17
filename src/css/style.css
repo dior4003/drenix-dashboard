@@ -427,6 +427,15 @@ a {
   }
 }
 
+.edit_input {
+  background-color: transparent;
+  outline: none;
+  padding: 10px;
+  border: 2px solid red;
+  border-radius: 8px;
+  color: red;
+}
+
 .dashboard {
   width: 100%;
   display: flex;
@@ -437,6 +446,8 @@ a {
   padding: 1% 10px 10% 20px;
   position: fixed;
   background: rgba(0, 0, 0, 0.849);
+  overflow-y: scroll;
+  z-index: 3;
 }
 .dashboard .sidebar .logo_icon {
   width: 100%;
@@ -508,12 +519,19 @@ a {
   flex-wrap: nowrap;
   align-items: flex-end;
 }
-.dashboard .sidebar .dash_list .list_menu .list_menus .list_menu_item {
+.dashboard .sidebar .dash_list .list_menu .list_menus a {
   width: 80%;
+}
+.dashboard .sidebar .dash_list .list_menu .list_menus a .list_menu_item {
+  width: 100%;
   padding: 15px;
   margin-top: 10px;
   box-shadow: 1px 1px 8px rgba(218, 218, 218, 0.356), 1px -1px 8px rgba(218, 218, 218, 0.329);
   border-radius: 10px;
+  color: #fff;
+}
+.dashboard .sidebar .dash_list .list_menu .list_menus a .list_menu_item:hover {
+  box-shadow: 2px 2px 8px rgba(218, 218, 218, 0.705), 2px -2px 8px rgba(218, 218, 218, 0.705);
 }
 .dashboard .dash_nav {
   width: 80%;
@@ -524,6 +542,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 5;
 }
 .dashboard .dash_nav .search_int input {
   padding: 10px;
@@ -540,6 +559,139 @@ a {
   font-size: 20px;
   border-bottom-right-radius: 6px;
   border-top-right-radius: 6px;
+}
+.dashboard .contents {
+  width: 80%;
+  margin-left: 20%;
+  margin-top: 5rem;
+}
+.dashboard .contents .contact_counter {
+  width: 100%;
+  height: 8rem;
+  background-color: rgba(194, 194, 194, 0.411);
+}
+.dashboard .contents .contact_counter .counter_box {
+  width: 90%;
+  height: 80%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.dashboard .contents .contact_counter .counter_box .counter_item {
+  width: 25%;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.dashboard .contents .contact_counter .counter_box .counter_item h1 {
+  text-align: center;
+  font-size: 70px;
+  font-weight: 800;
+  font-family: monospace;
+  color: #010c2a;
+}
+.dashboard .contents .contact_counter .counter_box .counter_item p {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 800;
+  font-family: monospace;
+  color: #010c2a;
+}
+.dashboard .contents .msg_container {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.dashboard .contents .msg_container .container-2 {
+  width: 300px;
+  background-color: #f1f1f1;
+  margin: 50px 10px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  box-shadow: -3px -3px 20px #ccc;
+  border-radius: 100px 20px 0 20px;
+  text-align: center;
+  overflow: hidden;
+  transition: 0.6s;
+  position: relative;
+  cursor: pointer;
+}
+.dashboard .contents .msg_container .container-2 .number {
+  margin: 10px auto;
+  width: 60px;
+  height: 60px;
+  background-color: #2196f3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+  border-radius: 50%;
+  transition: 0.7s;
+}
+.dashboard .contents .msg_container .container-2 h2 {
+  margin: 20px 0;
+  padding: 10px;
+  font-size: 1.8em;
+}
+.dashboard .contents .msg_container .container-2 .text {
+  width: 90%;
+  line-height: 1.7;
+  font-style: italic;
+  font-size: 18px;
+}
+.dashboard .contents .msg_container .container-2 a {
+  color: #055fdd;
+  font-size: 18px;
+}
+.dashboard .contents .msg_container .container-2 .buttons {
+  display: flex;
+  justify-content: space-around;
+  padding: 30px;
+}
+.dashboard .contents .msg_container .container-2 .buttons button {
+  padding: 10px;
+  outline: none;
+  border: 1px solid #2196f3;
+  background-color: transparent;
+  border-radius: 8px;
+  color: #2196f3;
+}
+.dashboard .contents .msg_container .container-2:hover {
+  color: #fff;
+}
+.dashboard .contents .msg_container .container-2:hover .number {
+  box-shadow: 0 0 0 500px #2196f3;
+}
+.dashboard .contents .msg_container .container-2:hover a {
+  color: #ffffff;
+}
+.dashboard .contents .msg_container .container-2:hover button {
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+.not_found {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+.not_found .title {
+  padding: 100px;
+  box-shadow: 2px 2px 8px rgba(218, 218, 218, 0.705), 2px -2px 8px rgba(218, 218, 218, 0.705);
+}
+.not_found .title .code {
+  font-size: 32px;
+  font-weight: 600;
+  font-family: monospace;
+  color: #3e403f;
+  cursor: pointer;
 }
 
 @media (max-width: 2560px) {
