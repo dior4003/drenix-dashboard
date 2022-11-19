@@ -6,12 +6,7 @@ import { useState } from "react";
 export default function Section3({ data, upd }) {
   const [video, setVideo] = useState(false);
   const [section3, setSection3] = useState(data);
-  const hendleChange = (e, data) => {
-    // setSection3({
-    //   ...section3,
-    //   data=e.target.value
-    // })
-  };
+
   console.log(section3);
   return (
     <div className="section_3" id="about">
