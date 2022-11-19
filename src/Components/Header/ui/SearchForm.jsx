@@ -36,11 +36,12 @@ export default function SearchForm({
     e.stopPropagation();
     if (lang === "uz") {
       setLang("ru");
-      localStorage.setItem("lang" ,"ru")
+      localStorage.setItem("lang", "ru");
     } else {
       setLang("uz");
       localStorage.setItem("lang", "uz");
     }
+    window.location.reload();
   };
   return (
     <div className="search_box">

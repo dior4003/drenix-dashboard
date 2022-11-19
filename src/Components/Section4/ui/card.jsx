@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Card({ card ,upd, section4, setSection4 }) {
+export default function Card({ card, upd, section4, setSection4 }) {
   return (
     <>
       {card.map((item, i) => (
@@ -12,10 +12,37 @@ export default function Card({ card ,upd, section4, setSection4 }) {
           }}
         >
           <div className="card_title">
-            <h3>{item.text}</h3>
+            <h3>
+              {upd ? (
+                <input
+                  className="edit_input"
+                  style={{
+                    width: `120px`,
+                    marginTop: "20px",
+                    padding: "0px",
+                  }}
+                  type="text"
+                  name="name"
+                  value={section4.courses[i].text}
+                  onChange={(e) =>
+                    setSection4({
+                      ...section4,
+                      courses: {
+                        ...section4.courses,
+                        [i]: {
+                          text: e.target.value,
+                        },
+                      },
+                    })
+                  }
+                />
+              ) : (
+                item.text
+              )}
+            </h3>
           </div>
           <div className="card_btn">
-            <span>Learn More{" ->"}</span>
+            <span style={{ padding: "5px 20px" }}>{" ->"}</span>
           </div>
         </div>
       ))}
@@ -29,7 +56,7 @@ export default function Card({ card ,upd, section4, setSection4 }) {
           <h3>Add +</h3>
         </div>
         <div className="card_btn">
-          <span>Learn More{" ->"}</span>
+          <span style={{ padding: "5px 20px" }}>{" ->"}</span>
         </div>
       </div>
     </>

@@ -19,7 +19,9 @@ export function MainUpd({ upd }) {
   // const [loading, setLoading] = useState(true);
   const [data, setData] = useState(null);
   const [posts, setPosts] = useState(null);
-  const [lang, setLang] = useState("uz");
+  const [lang, setLang] = useState(
+    localStorage.getItem("lang") ? localStorage.getItem("lang") : "uz"
+  );
   useEffect(() => {
     fetch(
       `https://drenix-back.herokuapp.com/${
@@ -34,6 +36,7 @@ export function MainUpd({ upd }) {
         // console.log(data[0]);
         // setLoading(false);
       });
+      
   }, [lang]);
   useEffect(() => {
     fetch(`https://drenix-back.herokuapp.com/`)

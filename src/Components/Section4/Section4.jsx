@@ -5,7 +5,7 @@ import Progress from "./ui/Progress";
 import { useState } from "react";
 
 export default function Section4({ data, upd }) {
-  const [section4 ,setSection4]=useState(data)
+  const [section4, setSection4] = useState(data);
   return (
     <section className="section_4">
       <div className="row">
@@ -112,7 +112,12 @@ export default function Section4({ data, upd }) {
             </div>
             <div className="progress_bar">
               <ul className="progres_list">
-                <Progress data={data.skills} upd={upd} section4={section4} setSection4={setSection4} />
+                <Progress
+                  data={data.skills}
+                  upd={upd}
+                  section4={section4}
+                  setSection4={setSection4}
+                />
               </ul>
             </div>
           </div>
@@ -120,10 +125,20 @@ export default function Section4({ data, upd }) {
       </div>
       <div className="cards_section">
         <div className="card_box">
-          <Card card={data.courses} />
+          <Card
+            card={data.courses}
+            upd={upd}
+            section4={section4}
+            setSection4={setSection4}
+          />
         </div>
       </div>
-      <FullSection item={data.fullSection} />
+      <FullSection
+        item={data.fullSection}
+        upd={upd}
+        section4={section4}
+        setSection4={setSection4}
+      />
     </section>
   );
 }

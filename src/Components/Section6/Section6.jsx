@@ -1,6 +1,8 @@
 import React from "react";
+import { useState } from "react";
 
-export default function Section6({ data }) {
+export default function Section6({ data, upd }) {
+  const [section6, setSection6] = useState(data);
   return (
     <section className="section_6">
       <div className="img_section">
@@ -9,10 +11,48 @@ export default function Section6({ data }) {
       </div>
       <div className="decr_section">
         <div className="title">
-          <h4>{data ? data.title1 : ""}</h4>
+          <h4>
+            {upd ? (
+              <input
+                className="edit_input"
+                style={{
+                  width: `${data.title1.length * 10}px`,
+                }}
+                type="text"
+                name="name"
+                value={section6.title1}
+                onChange={(e) =>
+                  setSection6({
+                    ...section6,
+                    title1: e.target.value,
+                  })
+                }
+              />
+            ) : (
+              data.title1
+            )}
+          </h4>
         </div>
         <div className="decr">
-          <h2>{data ? data.title2 : ""}</h2>
+          <h2>
+            {upd ? (
+              <textarea
+                className="edit_input"
+                style={{
+                  width: `400px`,
+                  height: `100px`,
+                }}
+                name={`text`}
+                type="text"
+                value={section6.title2}
+                onChange={(e) =>
+                  setSection6({ ...section6, title2: e.target.value })
+                }
+              ></textarea>
+            ) : (
+              section6.title2
+            )}
+          </h2>
         </div>
         <div className="card_box">
           {data
@@ -26,7 +66,32 @@ export default function Section6({ data }) {
                   </div>
                   <div className="text_box">
                     <div className="title">
-                      <h1>{item.title}</h1>
+                      <h1>
+                        {item.title}
+                        {upd ? (
+                          <input
+                            className="edit_input"
+                            style={{
+                              width: `${data.title1.length * 10}px`,
+                            }}
+                            type="text"
+                            name="name"
+                            value={section6.items[i].title}
+                            onChange={(e) =>
+                              setSection6({
+                                ...section6,
+                                items: {
+                                  ...section6.items,
+                                  [i]:{
+                                    title:e.target.value
+                                }},
+                              })
+                            }
+                          />
+                        ) : (
+                          data.title1
+                        )}
+                      </h1>
                     </div>
                     <div className="decri">
                       <p>{item.decr}</p>

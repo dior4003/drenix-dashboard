@@ -1,6 +1,6 @@
 import React from "react";
 import useCounter from "../../Hooks/counter";
-export default function FullSection({ item = [] }) {
+export default function FullSection({ item = [], upd, section4, setSection4 }) {
   const num = useCounter(1000);
 
   return (
@@ -19,11 +19,69 @@ export default function FullSection({ item = [] }) {
                 </div>
                 <div className="counter_box">
                   <span className="counter_item">
-                    {num < item.value ? num : item.value}
+                    {upd ? (
+                      <input
+                        className="edit_input"
+                        style={{
+                          width: `180px`,
+                          marginTop: "20px",
+                          padding: "0px",
+                        }}
+                        type="text"
+                        name="name"
+                        value={
+                          num < section4.fullSection[i].value
+                            ? num
+                            : section4.fullSection[i].value
+                        }
+                        onChange={(e) =>
+                          setSection4({
+                            ...section4,
+                            fullSection: {
+                              ...section4.fullSection,
+                              [i]: {
+                                value: e.target.value,
+                              },
+                            },
+                          })
+                        }
+                      />
+                    ) : num < item.value ? (
+                      num
+                    ) : (
+                      item.value
+                    )}
                   </span>
                   <div className="counter_icon">{item.icon}</div>
                 </div>
-                <p>{item.title}</p>
+                <p>
+                  {upd ? (
+                    <input
+                      className="edit_input"
+                      style={{
+                        width: `180px`,
+                        marginTop: "20px",
+                        padding: "0px",
+                      }}
+                      type="text"
+                      name="name"
+                      value={section4.fullSection[i].title}
+                      onChange={(e) =>
+                        setSection4({
+                          ...section4,
+                          fullSection: {
+                            ...section4.fullSection,
+                            [i]: {
+                              title: e.target.value,
+                            },
+                          },
+                        })
+                      }
+                    />
+                  ) : (
+                    item.title
+                  )}
+                </p>
               </div>
             );
           })}
