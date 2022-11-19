@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Card({ card }) {
+export default function Card({ card ,upd, section4, setSection4 }) {
   return (
     <>
       {card.map((item, i) => (

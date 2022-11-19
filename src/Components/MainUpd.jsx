@@ -21,7 +21,11 @@ export function MainUpd({ upd }) {
   const [posts, setPosts] = useState(null);
   const [lang, setLang] = useState("uz");
   useEffect(() => {
-    fetch(`https://drenix-back.herokuapp.com/${localStorage.getItem("lang")}`)
+    fetch(
+      `https://drenix-back.herokuapp.com/${
+        localStorage.getItem("lang") ? localStorage.getItem("lang") : "uz"
+      }`
+    )
       .then((response) => response.json())
       // 4. Setting *dogImage* to the image url that we received from the response above
       .then((data) => {

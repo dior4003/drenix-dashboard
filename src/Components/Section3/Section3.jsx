@@ -5,6 +5,14 @@ import Video from "./ui/Video";
 import { useState } from "react";
 export default function Section3({ data, upd }) {
   const [video, setVideo] = useState(false);
+  const [section3, setSection3] = useState(data);
+  const hendleChange = (e, data) => {
+    // setSection3({
+    //   ...section3,
+    //   data=e.target.value
+    // })
+  };
+  console.log(section3);
   return (
     <div className="section_3" id="about">
       {video ? <Video setVideo={setVideo} /> : null}
@@ -45,10 +53,13 @@ export default function Section3({ data, upd }) {
                     style={{ width: `${data.title1.length * 10}px` }}
                     type="text"
                     name="name"
-                    value={data.title1}
+                    value={section3.title1}
+                    onChange={(e) =>
+                      setSection3({ ...section3, title1: e.target.value })
+                    }
                   />
                 ) : (
-                  data.title1
+                  section3.title1
                 )}
               </h6>
             </div>
@@ -60,10 +71,13 @@ export default function Section3({ data, upd }) {
                     style={{ width: `${data.title2.length * 7}px` }}
                     type="text"
                     name="name"
-                    value={data.title2}
+                    value={section3.title2}
+                    onChange={(e) =>
+                      setSection3({ ...section3, title2: e.target.value })
+                    }
                   />
                 ) : (
-                  data.title2
+                  section3.title2
                 )}
               </h1>
             </div>
@@ -78,10 +92,13 @@ export default function Section3({ data, upd }) {
                     }}
                     name={`text`}
                     type="text"
-                    value={data.title3}
+                    value={section3.title3}
+                    onChange={(e) =>
+                      setSection3({ ...section3, title3: e.target.value })
+                    }
                   ></textarea>
                 ) : (
-                  data.title3
+                  section3.title3
                 )}
               </p>
             </div>
@@ -108,10 +125,16 @@ export default function Section3({ data, upd }) {
                               }}
                               type="text"
                               name="name"
-                              value={data.derektor.name}
+                              value={section3.derektor.name}
+                              onChange={(e) =>
+                                setSection3({
+                                  ...section3,
+                                  derektor: { name: e.target.value },
+                                })
+                              }
                             />
                           ) : (
-                            data.derektor.name
+                            section3.derektor.name
                           )}
                         </b>
                       </h4>
@@ -124,10 +147,16 @@ export default function Section3({ data, upd }) {
                             }}
                             type="text"
                             name="name"
-                            value={data.derektor.job}
+                            value={section3.derektor.job}
+                            onChange={(e) =>
+                              setSection3({
+                                ...section3,
+                                derektor: { job: e.target.value },
+                              })
+                            }
                           />
                         ) : (
-                          data.derektor.job
+                          section3.derektor.job
                         )}
                       </p>
                     </div>
@@ -149,7 +178,16 @@ export default function Section3({ data, upd }) {
                               }}
                               type="text"
                               name="name"
-                              value={item.title}
+                              value={section3.adjus[i].title}
+                              onChange={(e) =>
+                                setSection3({
+                                  ...section3,
+                                  adjus: {
+                                    ...data.adjus,
+                                    [i]: { title: e.target.value },
+                                  },
+                                })
+                              }
                             />
                           ) : (
                             item.title

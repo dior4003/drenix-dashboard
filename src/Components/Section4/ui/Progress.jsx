@@ -1,7 +1,7 @@
 import React from "react";
 import useCounter from "../../Hooks/counter";
 
-export default function Progress({ data, upd }) {
+export default function Progress({ data, upd, section4, setSection4 }) {
   const num = useCounter(100);
   return (
     <>
@@ -13,13 +13,24 @@ export default function Progress({ data, upd }) {
                 <input
                   className="edit_input"
                   style={{
-                    width: `${item.text.length * 7}px`,
+                    width: `180px`,
                     marginTop: "20px",
                     padding: "0px",
                   }}
                   type="text"
                   name="name"
-                  value={item.text}
+                  value={section4.skills[i].text}
+                  onChange={(e) =>
+                    setSection4({
+                      ...section4,
+                      skills: {
+                        ...section4.skills,
+                        [i]: {
+                          text: e.target.value,
+                        },
+                      },
+                    })
+                  }
                 />
               ) : (
                 item.text
@@ -30,13 +41,24 @@ export default function Progress({ data, upd }) {
                 <input
                   className="edit_input"
                   style={{
-                    width: `${item.value.length * 5}px`,
+                    width: `${item.value}px`,
                     marginTop: "20px",
                     padding: "0px",
                   }}
                   type="text"
                   name="name"
-                  value={item.value}
+                  value={section4.skills[i].value}
+                  onChange={(e) =>
+                    setSection4({
+                      ...section4,
+                      skills: {
+                        ...section4.skills,
+                        [i]: {
+                          value: e.target.value,
+                        },
+                      },
+                    })
+                  }
                 />
               ) : (
                 item.value

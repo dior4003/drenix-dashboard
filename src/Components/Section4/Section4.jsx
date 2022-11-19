@@ -2,8 +2,10 @@ import React from "react";
 import FullSection from "./ui/FullSection";
 import Card from "./ui/card";
 import Progress from "./ui/Progress";
+import { useState } from "react";
 
 export default function Section4({ data, upd }) {
+  const [section4 ,setSection4]=useState(data)
   return (
     <section className="section_4">
       <div className="row">
@@ -19,7 +21,13 @@ export default function Section4({ data, upd }) {
                     }}
                     type="text"
                     name="name"
-                    value={data.year}
+                    value={section4.year}
+                    onChange={(e) =>
+                      setSection4({
+                        ...section4,
+                        year: e.target.value,
+                      })
+                    }
                   />
                 ) : (
                   data.year
@@ -37,7 +45,13 @@ export default function Section4({ data, upd }) {
                     }}
                     type="text"
                     name="name"
-                    value={data.title1}
+                    value={section4.title1}
+                    onChange={(e) =>
+                      setSection4({
+                        ...section4,
+                        title1: e.target.value,
+                      })
+                    }
                   />
                 ) : (
                   data.title1
@@ -55,7 +69,13 @@ export default function Section4({ data, upd }) {
                     }}
                     name={`text`}
                     type="text"
-                    value={data.title2}
+                    value={section4.title2}
+                    onChange={(e) =>
+                      setSection4({
+                        ...section4,
+                        title2: e.target.value,
+                      })
+                    }
                   ></textarea>
                 ) : (
                   data.title2
@@ -77,7 +97,13 @@ export default function Section4({ data, upd }) {
                     }}
                     name={`text`}
                     type="text"
-                    value={data.title3}
+                    value={section4.title3}
+                    onChange={(e) =>
+                      setSection4({
+                        ...section4,
+                        title3: e.target.value,
+                      })
+                    }
                   ></textarea>
                 ) : (
                   data.title3
@@ -86,7 +112,7 @@ export default function Section4({ data, upd }) {
             </div>
             <div className="progress_bar">
               <ul className="progres_list">
-                <Progress data={data.skills} upd={upd} />
+                <Progress data={data.skills} upd={upd} section4={section4} setSection4={setSection4} />
               </ul>
             </div>
           </div>
