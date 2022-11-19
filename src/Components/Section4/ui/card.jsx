@@ -19,6 +19,19 @@ export default function Card({ card }) {
           </div>
         </div>
       ))}
+      <div
+        className="card_item"
+        style={{
+          background: `gray`,
+        }}
+      >
+        <div className="card_title">
+          <h3>Add +</h3>
+        </div>
+        <div className="card_btn">
+          <span>Learn More{" ->"}</span>
+        </div>
+      </div>
     </>
   );
 }

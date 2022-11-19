@@ -434,6 +434,7 @@ a {
   border: 2px solid red;
   border-radius: 8px;
   color: red;
+  z-index: 3;
 }
 
 .dashboard {
@@ -1120,11 +1121,11 @@ a {
     margin-right: auto;
     z-index: 1;
   }
-  .elementor-section .row .col-3 a {
+  .elementor-section .row .col-3 .a {
     text-decoration: none;
     color: #fff;
   }
-  .elementor-section .row .col-3 a .card_ {
+  .elementor-section .row .col-3 .a .card_ {
     width: 340px;
     height: 500px;
     transition: 0.2s all linear;
@@ -1141,7 +1142,7 @@ a {
     border-radius: 5px;
     box-shadow: 1px 1px 8px rgba(218, 218, 218, 0.356), 1px -1px 8px rgba(218, 218, 218, 0.329);
   }
-  .elementor-section .row .col-3 a .card_ .card_body {
+  .elementor-section .row .col-3 .a .card_ .card_body {
     width: 100%;
     height: 100%;
     background-color: #fff;
@@ -1153,19 +1154,19 @@ a {
     align-items: center;
     position: relative;
   }
-  .elementor-section .row .col-3 a .card_ .card_body .logo {
+  .elementor-section .row .col-3 .a .card_ .card_body .logo {
     padding-top: 40px;
   }
-  .elementor-section .row .col-3 a .card_ .card_body .logo img {
+  .elementor-section .row .col-3 .a .card_ .card_body .logo img {
     width: 60px;
   }
-  .elementor-section .row .col-3 a .card_ .card_body .logo:nth-child(3) {
+  .elementor-section .row .col-3 .a .card_ .card_body .logo:nth-child(3) {
     padding-top: 40px;
   }
-  .elementor-section .row .col-3 a .card_ .card_body .logo:nth-child(3) img {
+  .elementor-section .row .col-3 .a .card_ .card_body .logo:nth-child(3) img {
     width: 10px;
   }
-  .elementor-section .row .col-3 a .card_ .card_body .title h2 {
+  .elementor-section .row .col-3 .a .card_ .card_body .title h2 {
     text-align: center;
     color: rgba(0, 0, 0, 0.63);
     font-size: 28px;
@@ -1173,7 +1174,7 @@ a {
     font-weight: 800;
     margin: 0 35px;
   }
-  .elementor-section .row .col-3 a .card_ .card_body .sub_title p {
+  .elementor-section .row .col-3 .a .card_ .card_body .sub_title p {
     text-align: center;
     color: rgba(0, 0, 0, 0.63);
     padding: 18px;
@@ -1182,7 +1183,7 @@ a {
     font-weight: 600;
     margin: 0 10px;
   }
-  .elementor-section .row .col-3 a .card_ .card_body .shape {
+  .elementor-section .row .col-3 .a .card_ .card_body .shape {
     width: 205px;
     height: 205px;
     border-radius: 50%;
@@ -1193,33 +1194,6 @@ a {
     opacity: 1;
     transition: all 0.3s linear;
     z-index: -1;
-  }
-  .elementor-section .row .col-3 a:hover {
-    transition: 0.4s all linear;
-  }
-  .elementor-section .row .col-3 a:hover .card_ .card_body {
-    background: linear-gradient(148deg, #54d6eb 0%, #055fdd 100%);
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    transition: 0.6s all linear;
-  }
-  .elementor-section .row .col-3 a:hover .card_ .card_body .logo {
-    display: none;
-  }
-  .elementor-section .row .col-3 a:hover .card_ .card_body .title {
-    margin-top: 20px;
-  }
-  .elementor-section .row .col-3 a:hover .card_ .card_body .title h2 {
-    text-align: center;
-    color: #fff;
-    z-index: 1;
-    transition: 0.2s all linear;
-  }
-  .elementor-section .row .col-3 a:hover .card_ .card_body .sub_title p {
-    color: #fff;
-    z-index: 1;
-    transition: 0.2s all linear;
   }
   .section_3 {
     padding: 20px;
@@ -3298,11 +3272,11 @@ a {
     margin-right: auto;
     z-index: 1;
   }
-  .elementor-section .row .col-3 a {
+  .elementor-section .row .col-3 .a {
     text-decoration: none;
     color: #fff;
   }
-  .elementor-section .row .col-3 a .card_ {
+  .elementor-section .row .col-3 .a .card_ {
     width: 270px;
     height: 390px;
     transition: 0.2s all linear;
@@ -3319,7 +3293,7 @@ a {
     border-radius: 5px;
     box-shadow: 1px 1px 8px rgba(218, 218, 218, 0.356), 1px -1px 8px rgba(218, 218, 218, 0.329);
   }
-  .elementor-section .row .col-3 a .card_ .card_body {
+  .elementor-section .row .col-3 .a .card_ .card_body {
     width: 100%;
     height: 100%;
     background-color: #fff;
@@ -3331,19 +3305,19 @@ a {
     align-items: center;
     position: relative;
   }
-  .elementor-section .row .col-3 a .card_ .card_body .logo {
+  .elementor-section .row .col-3 .a .card_ .card_body .logo {
     padding-top: 20px;
   }
-  .elementor-section .row .col-3 a .card_ .card_body .logo img {
+  .elementor-section .row .col-3 .a .card_ .card_body .logo img {
     width: 60px;
   }
-  .elementor-section .row .col-3 a .card_ .card_body .logo:nth-child(3) {
+  .elementor-section .row .col-3 .a .card_ .card_body .logo:nth-child(3) {
     padding-top: 40px;
   }
-  .elementor-section .row .col-3 a .card_ .card_body .logo:nth-child(3) img {
+  .elementor-section .row .col-3 .a .card_ .card_body .logo:nth-child(3) img {
     width: 10px;
   }
-  .elementor-section .row .col-3 a .card_ .card_body .title h2 {
+  .elementor-section .row .col-3 .a .card_ .card_body .title h2 {
     text-align: center;
     color: rgba(0, 0, 0, 0.63);
     font-size: 28px;
@@ -3351,7 +3325,7 @@ a {
     font-weight: 800;
     margin: 0 35px;
   }
-  .elementor-section .row .col-3 a .card_ .card_body .sub_title p {
+  .elementor-section .row .col-3 .a .card_ .card_body .sub_title p {
     text-align: center;
     color: rgba(0, 0, 0, 0.63);
     padding: 15px;
@@ -3360,7 +3334,7 @@ a {
     font-weight: 600;
     margin: 0 10px;
   }
-  .elementor-section .row .col-3 a .card_ .card_body .shape {
+  .elementor-section .row .col-3 .a .card_ .card_body .shape {
     width: 205px;
     height: 205px;
     border-radius: 50%;
@@ -3371,33 +3345,6 @@ a {
     opacity: 1;
     transition: all 0.3s linear;
     z-index: -1;
-  }
-  .elementor-section .row .col-3 a:hover {
-    transition: 0.4s all linear;
-  }
-  .elementor-section .row .col-3 a:hover .card_ .card_body {
-    background: linear-gradient(148deg, #54d6eb 0%, #055fdd 100%);
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    transition: 0.6s all linear;
-  }
-  .elementor-section .row .col-3 a:hover .card_ .card_body .logo {
-    display: none;
-  }
-  .elementor-section .row .col-3 a:hover .card_ .card_body .title {
-    margin-top: 20px;
-  }
-  .elementor-section .row .col-3 a:hover .card_ .card_body .title h2 {
-    text-align: center;
-    color: #fff;
-    z-index: 1;
-    transition: 0.2s all linear;
-  }
-  .elementor-section .row .col-3 a:hover .card_ .card_body .sub_title p {
-    color: #fff;
-    z-index: 1;
-    transition: 0.2s all linear;
   }
   .section_3 {
     padding: 20px;
@@ -5470,11 +5417,11 @@ a {
     width: 365px;
     margin-top: 20px;
   }
-  .elementor-section .row .col-3 a {
+  .elementor-section .row .col-3 .a {
     text-decoration: none;
     color: #fff;
   }
-  .elementor-section .row .col-3 a .card_ {
+  .elementor-section .row .col-3 .a .card_ {
     width: 350px;
     height: 450px;
     transition: 0.2s all linear;
@@ -5491,7 +5438,7 @@ a {
     border-radius: 5px;
     box-shadow: 1px 1px 8px rgba(218, 218, 218, 0.356), 1px -1px 8px rgba(218, 218, 218, 0.329);
   }
-  .elementor-section .row .col-3 a .card_ .card_body {
+  .elementor-section .row .col-3 .a .card_ .card_body {
     width: 100%;
     height: 100%;
     background-color: #fff;
@@ -5503,19 +5450,19 @@ a {
     align-items: center;
     position: relative;
   }
-  .elementor-section .row .col-3 a .card_ .card_body .logo {
+  .elementor-section .row .col-3 .a .card_ .card_body .logo {
     padding-top: 40px;
   }
-  .elementor-section .row .col-3 a .card_ .card_body .logo img {
+  .elementor-section .row .col-3 .a .card_ .card_body .logo img {
     width: 60px;
   }
-  .elementor-section .row .col-3 a .card_ .card_body .logo:nth-child(3) {
+  .elementor-section .row .col-3 .a .card_ .card_body .logo:nth-child(3) {
     padding-top: 40px;
   }
-  .elementor-section .row .col-3 a .card_ .card_body .logo:nth-child(3) img {
+  .elementor-section .row .col-3 .a .card_ .card_body .logo:nth-child(3) img {
     width: 10px;
   }
-  .elementor-section .row .col-3 a .card_ .card_body .title h2 {
+  .elementor-section .row .col-3 .a .card_ .card_body .title h2 {
     text-align: center;
     color: rgba(0, 0, 0, 0.63);
     font-size: 28px;
@@ -5523,7 +5470,7 @@ a {
     font-weight: 800;
     margin: 0 35px;
   }
-  .elementor-section .row .col-3 a .card_ .card_body .sub_title p {
+  .elementor-section .row .col-3 .a .card_ .card_body .sub_title p {
     text-align: center;
     color: rgba(0, 0, 0, 0.63);
     padding: 18px;
@@ -5532,7 +5479,7 @@ a {
     font-weight: 600;
     margin: 0 10px;
   }
-  .elementor-section .row .col-3 a .card_ .card_body .shape {
+  .elementor-section .row .col-3 .a .card_ .card_body .shape {
     width: 205px;
     height: 205px;
     border-radius: 50%;
@@ -5543,33 +5490,6 @@ a {
     opacity: 1;
     transition: all 0.3s linear;
     z-index: -1;
-  }
-  .elementor-section .row .col-3 a:hover {
-    transition: 0.4s all linear;
-  }
-  .elementor-section .row .col-3 a:hover .card_ .card_body {
-    background: linear-gradient(148deg, #54d6eb 0%, #055fdd 100%);
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    transition: 0.6s all linear;
-  }
-  .elementor-section .row .col-3 a:hover .card_ .card_body .logo {
-    display: none;
-  }
-  .elementor-section .row .col-3 a:hover .card_ .card_body .title {
-    margin-top: 20px;
-  }
-  .elementor-section .row .col-3 a:hover .card_ .card_body .title h2 {
-    text-align: center;
-    color: #fff;
-    z-index: 1;
-    transition: 0.2s all linear;
-  }
-  .elementor-section .row .col-3 a:hover .card_ .card_body .sub_title p {
-    color: #fff;
-    z-index: 1;
-    transition: 0.2s all linear;
   }
   .section_3 {
     padding: 20px;
@@ -7511,11 +7431,11 @@ a {
     width: 345px;
     margin-top: 20px;
   }
-  .elementor-section .row .col-3 a {
+  .elementor-section .row .col-3 .a {
     text-decoration: none;
     color: #fff;
   }
-  .elementor-section .row .col-3 a .card_ {
+  .elementor-section .row .col-3 .a .card_ {
     width: 350px;
     height: 390px;
     transition: 0.2s all linear;
@@ -7532,7 +7452,7 @@ a {
     border-radius: 5px;
     box-shadow: 1px 1px 8px rgba(218, 218, 218, 0.356), 1px -1px 8px rgba(218, 218, 218, 0.329);
   }
-  .elementor-section .row .col-3 a .card_ .card_body {
+  .elementor-section .row .col-3 .a .card_ .card_body {
     width: 100%;
     height: 100%;
     background-color: #fff;
@@ -7544,19 +7464,19 @@ a {
     align-items: center;
     position: relative;
   }
-  .elementor-section .row .col-3 a .card_ .card_body .logo {
+  .elementor-section .row .col-3 .a .card_ .card_body .logo {
     padding-top: 40px;
   }
-  .elementor-section .row .col-3 a .card_ .card_body .logo img {
+  .elementor-section .row .col-3 .a .card_ .card_body .logo img {
     width: 60px;
   }
-  .elementor-section .row .col-3 a .card_ .card_body .logo:nth-child(3) {
+  .elementor-section .row .col-3 .a .card_ .card_body .logo:nth-child(3) {
     padding-top: 40px;
   }
-  .elementor-section .row .col-3 a .card_ .card_body .logo:nth-child(3) img {
+  .elementor-section .row .col-3 .a .card_ .card_body .logo:nth-child(3) img {
     width: 10px;
   }
-  .elementor-section .row .col-3 a .card_ .card_body .title h2 {
+  .elementor-section .row .col-3 .a .card_ .card_body .title h2 {
     text-align: center;
     color: rgba(0, 0, 0, 0.63);
     font-size: 28px;
@@ -7564,7 +7484,7 @@ a {
     font-weight: 800;
     margin: 0 35px;
   }
-  .elementor-section .row .col-3 a .card_ .card_body .sub_title p {
+  .elementor-section .row .col-3 .a .card_ .card_body .sub_title p {
     text-align: center;
     color: rgba(0, 0, 0, 0.63);
     padding: 18px;
@@ -7573,7 +7493,7 @@ a {
     font-weight: 600;
     margin: 0 10px;
   }
-  .elementor-section .row .col-3 a .card_ .card_body .shape {
+  .elementor-section .row .col-3 .a .card_ .card_body .shape {
     width: 205px;
     height: 205px;
     border-radius: 50%;
@@ -7584,33 +7504,6 @@ a {
     opacity: 1;
     transition: all 0.3s linear;
     z-index: -1;
-  }
-  .elementor-section .row .col-3 a:hover {
-    transition: 0.4s all linear;
-  }
-  .elementor-section .row .col-3 a:hover .card_ .card_body {
-    background: linear-gradient(148deg, #54d6eb 0%, #055fdd 100%);
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    transition: 0.6s all linear;
-  }
-  .elementor-section .row .col-3 a:hover .card_ .card_body .logo {
-    display: none;
-  }
-  .elementor-section .row .col-3 a:hover .card_ .card_body .title {
-    margin-top: 20px;
-  }
-  .elementor-section .row .col-3 a:hover .card_ .card_body .title h2 {
-    text-align: center;
-    color: #fff;
-    z-index: 1;
-    transition: 0.2s all linear;
-  }
-  .elementor-section .row .col-3 a:hover .card_ .card_body .sub_title p {
-    color: #fff;
-    z-index: 1;
-    transition: 0.2s all linear;
   }
   .section_3 {
     padding: 20px;
@@ -9611,11 +9504,11 @@ a {
     width: 365px;
     margin-top: 20px;
   }
-  .elementor-section .row .col-3 a {
+  .elementor-section .row .col-3 .a {
     text-decoration: none;
     color: #fff;
   }
-  .elementor-section .row .col-3 a .card_ {
+  .elementor-section .row .col-3 .a .card_ {
     width: 350px;
     height: 390px;
     transition: 0.2s all linear;
@@ -9632,7 +9525,7 @@ a {
     border-radius: 5px;
     box-shadow: 1px 1px 8px rgba(218, 218, 218, 0.356), 1px -1px 8px rgba(218, 218, 218, 0.329);
   }
-  .elementor-section .row .col-3 a .card_ .card_body {
+  .elementor-section .row .col-3 .a .card_ .card_body {
     width: 100%;
     height: 100%;
     background-color: #fff;
@@ -9644,19 +9537,19 @@ a {
     align-items: center;
     position: relative;
   }
-  .elementor-section .row .col-3 a .card_ .card_body .logo {
+  .elementor-section .row .col-3 .a .card_ .card_body .logo {
     padding-top: 40px;
   }
-  .elementor-section .row .col-3 a .card_ .card_body .logo img {
+  .elementor-section .row .col-3 .a .card_ .card_body .logo img {
     width: 60px;
   }
-  .elementor-section .row .col-3 a .card_ .card_body .logo:nth-child(3) {
+  .elementor-section .row .col-3 .a .card_ .card_body .logo:nth-child(3) {
     padding-top: 40px;
   }
-  .elementor-section .row .col-3 a .card_ .card_body .logo:nth-child(3) img {
+  .elementor-section .row .col-3 .a .card_ .card_body .logo:nth-child(3) img {
     width: 10px;
   }
-  .elementor-section .row .col-3 a .card_ .card_body .title h2 {
+  .elementor-section .row .col-3 .a .card_ .card_body .title h2 {
     text-align: center;
     color: rgba(0, 0, 0, 0.63);
     font-size: 28px;
@@ -9664,7 +9557,7 @@ a {
     font-weight: 800;
     margin: 0 35px;
   }
-  .elementor-section .row .col-3 a .card_ .card_body .sub_title p {
+  .elementor-section .row .col-3 .a .card_ .card_body .sub_title p {
     text-align: center;
     color: rgba(0, 0, 0, 0.63);
     padding: 18px;
@@ -9673,7 +9566,7 @@ a {
     font-weight: 600;
     margin: 0 10px;
   }
-  .elementor-section .row .col-3 a .card_ .card_body .shape {
+  .elementor-section .row .col-3 .a .card_ .card_body .shape {
     width: 205px;
     height: 205px;
     border-radius: 50%;
@@ -9684,33 +9577,6 @@ a {
     opacity: 1;
     transition: all 0.3s linear;
     z-index: -1;
-  }
-  .elementor-section .row .col-3 a:hover {
-    transition: 0.4s all linear;
-  }
-  .elementor-section .row .col-3 a:hover .card_ .card_body {
-    background: linear-gradient(148deg, #54d6eb 0%, #055fdd 100%);
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    transition: 0.6s all linear;
-  }
-  .elementor-section .row .col-3 a:hover .card_ .card_body .logo {
-    display: none;
-  }
-  .elementor-section .row .col-3 a:hover .card_ .card_body .title {
-    margin-top: 15px;
-  }
-  .elementor-section .row .col-3 a:hover .card_ .card_body .title h2 {
-    text-align: center;
-    color: #fff;
-    z-index: 1;
-    transition: 0.2s all linear;
-  }
-  .elementor-section .row .col-3 a:hover .card_ .card_body .sub_title p {
-    color: #fff;
-    z-index: 1;
-    transition: 0.2s all linear;
   }
   .section_3 {
     padding: 20px;
@@ -11720,11 +11586,11 @@ a {
     width: 130px;
     margin-top: 20px;
   }
-  .elementor-section .row .col-3 a {
+  .elementor-section .row .col-3 .a {
     text-decoration: none;
     color: #fff;
   }
-  .elementor-section .row .col-3 a .card_ {
+  .elementor-section .row .col-3 .a .card_ {
     width: 120px;
     height: 180px;
     transition: 0.2s all linear;
@@ -11741,7 +11607,7 @@ a {
     border-radius: 5px;
     box-shadow: 1px 1px 8px rgba(218, 218, 218, 0.356), 1px -1px 8px rgba(218, 218, 218, 0.329);
   }
-  .elementor-section .row .col-3 a .card_ .card_body {
+  .elementor-section .row .col-3 .a .card_ .card_body {
     width: 100%;
     height: 100%;
     background-color: #fff;
@@ -11753,19 +11619,19 @@ a {
     align-items: center;
     position: relative;
   }
-  .elementor-section .row .col-3 a .card_ .card_body .logo {
+  .elementor-section .row .col-3 .a .card_ .card_body .logo {
     padding-top: 20px;
   }
-  .elementor-section .row .col-3 a .card_ .card_body .logo img {
+  .elementor-section .row .col-3 .a .card_ .card_body .logo img {
     width: 30px;
   }
-  .elementor-section .row .col-3 a .card_ .card_body .logo:nth-child(3) {
+  .elementor-section .row .col-3 .a .card_ .card_body .logo:nth-child(3) {
     padding-top: 20px;
   }
-  .elementor-section .row .col-3 a .card_ .card_body .logo:nth-child(3) img {
+  .elementor-section .row .col-3 .a .card_ .card_body .logo:nth-child(3) img {
     width: 10px;
   }
-  .elementor-section .row .col-3 a .card_ .card_body .title h2 {
+  .elementor-section .row .col-3 .a .card_ .card_body .title h2 {
     text-align: center;
     color: rgba(0, 0, 0, 0.63);
     font-size: 10px;
@@ -11773,7 +11639,7 @@ a {
     font-weight: 800;
     margin: 0 35px;
   }
-  .elementor-section .row .col-3 a .card_ .card_body .sub_title p {
+  .elementor-section .row .col-3 .a .card_ .card_body .sub_title p {
     text-align: center;
     color: rgba(0, 0, 0, 0.63);
     padding: 8px;
@@ -11782,7 +11648,7 @@ a {
     font-weight: 600;
     margin: 0 10px;
   }
-  .elementor-section .row .col-3 a .card_ .card_body .shape {
+  .elementor-section .row .col-3 .a .card_ .card_body .shape {
     width: 205px;
     height: 205px;
     border-radius: 50%;
@@ -11793,33 +11659,6 @@ a {
     opacity: 1;
     transition: all 0.3s linear;
     z-index: -1;
-  }
-  .elementor-section .row .col-3 a:hover {
-    transition: 0.4s all linear;
-  }
-  .elementor-section .row .col-3 a:hover .card_ .card_body {
-    background: linear-gradient(148deg, #54d6eb 0%, #055fdd 100%);
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    transition: 0.6s all linear;
-  }
-  .elementor-section .row .col-3 a:hover .card_ .card_body .logo {
-    display: none;
-  }
-  .elementor-section .row .col-3 a:hover .card_ .card_body .title {
-    margin-top: 10px;
-  }
-  .elementor-section .row .col-3 a:hover .card_ .card_body .title h2 {
-    text-align: center;
-    color: #fff;
-    z-index: 1;
-    transition: 0.2s all linear;
-  }
-  .elementor-section .row .col-3 a:hover .card_ .card_body .sub_title p {
-    color: #fff;
-    z-index: 1;
-    transition: 0.2s all linear;
   }
   .section_3 {
     padding: 20px;

@@ -18,7 +18,7 @@ export default function Section7({ data }) {
                     key={i}
                     style={{
                       background: `url(https://drenix-back.herokuapp.com/static/media/${item.img})`,
-                      backgroundSize: "contain"
+                      backgroundSize: "contain",
                     }}
                     className="card"
                   >
@@ -26,17 +26,22 @@ export default function Section7({ data }) {
                       <div className="shape">
                         <ul className="social_box">
                           <li>
-                            <a target="_blank" href={item.facebook.link.length>5?item.facebook.link:null}>
+                            <a href={item.facebook.link}
+                            >
                               <i className={item.facebook.icon}></i>
                             </a>
                           </li>
                           <li>
-                            <a target="_blank" href={item.twitter.link.length>5?item.twitter.link:null}>
+                            <a 
+                              href={item.twitter.link}
+                            >
                               <i className={item.twitter.icon}></i>
                             </a>
                           </li>
                           <li>
-                            <a target="_blank" href={item.youtube.link.length>5?item.youtube.link:null}>
+                            <a
+                              href={item.youtube.link}
+                            >
                               <i className={item.youtube.icon}></i>
                             </a>
                           </li>

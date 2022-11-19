@@ -15,17 +15,18 @@ import Section7 from "./Section7";
 import Section8 from "./Section8";
 import Section9 from "./Section9";
 
-export function MainUpd({upd}) {
+export function MainUpd({ upd }) {
   // const [loading, setLoading] = useState(true);
   const [data, setData] = useState(null);
   const [posts, setPosts] = useState(null);
   const [lang, setLang] = useState("uz");
   useEffect(() => {
-    fetch(`https://drenix-back.herokuapp.com/${lang}`)
+    fetch(`https://drenix-back.herokuapp.com/${localStorage.getItem("lang")}`)
       .then((response) => response.json())
       // 4. Setting *dogImage* to the image url that we received from the response above
       .then((data) => {
         setData(data[0]);
+        // localStorage.setItem("lang", lang);
         // console.log(data[0]);
         // setLoading(false);
       });
@@ -41,7 +42,7 @@ export function MainUpd({upd}) {
   }, []);
   const [nav, setNav] = useState("col-6");
   const [search, setSearch] = useState(false);
-  
+
   // console.log(update);
 
   return (
@@ -59,13 +60,8 @@ export function MainUpd({upd}) {
             lang={lang}
             setLang={setLang}
             upd={upd}
-            
           />
-          <MainSection 
-            data={data.section1} 
-            upd={upd}
-            
-            />
+          <MainSection data={data.section1} upd={upd} />
           <Section2 data={data.section2} upd={upd} />
           <Section3 data={data.section3} upd={upd} />
           <Section4 data={data.section4} upd={upd} />
@@ -73,7 +69,7 @@ export function MainUpd({upd}) {
           <Section6 data={data.seaction6} upd={upd} />
           <Section7 data={data.sectoin7} upd={upd} />
           <Section8 data={data.section8} upd={upd} />
-          {posts > 0 ? <Section9 upd={upd}/> : null}
+          {posts > 0 ? <Section9 upd={upd} /> : null}
           <Section10 data={data.section10} />
           <Footer data={data.footer} upd={upd} />
         </>

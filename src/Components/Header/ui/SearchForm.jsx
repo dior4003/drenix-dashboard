@@ -1,7 +1,16 @@
 import React from "react";
 import { useState } from "react";
 
-export default function SearchForm({ search, setSearch, lang, setLang ,data ,upd}) {
+export default function SearchForm({
+  search,
+  setSearch,
+  lang,
+  setLang,
+  data,
+  upd,
+  setPxone,
+  setTht,
+}) {
   const hendlSubmit = (e) => {
     e.preventDeafault();
     e.stopPropagation();
@@ -10,15 +19,27 @@ export default function SearchForm({ search, setSearch, lang, setLang ,data ,upd
     e.stopPropagation();
     setSearch(!search);
   };
-  const [tel, setTel]=useState(data.phone)
-  const [text ,setText]=useState(data.phone_txt)
+  const [tel, setTel] = useState(data.phone);
+  const [text, setText] = useState(data.phone_txt ? data.phone_txt : null);
+
+  const hendleChange = (e) => {
+    if (e.target.name === "tel") {
+      setTel(e.target.value);
+    } else {
+      setText(e.target.value);
+    }
+  };
+  setPxone(tel);
+  setTht(text);
 
   const handleLang = (e) => {
     e.stopPropagation();
     if (lang === "uz") {
       setLang("ru");
+      localStorage.setItem("lang" ,"ru")
     } else {
       setLang("uz");
+      localStorage.setItem("lang", "uz");
     }
   };
   return (
@@ -28,29 +49,38 @@ export default function SearchForm({ search, setSearch, lang, setLang ,data ,upd
           <i className="fa-solid fa-phone text-primary fs-5"></i>
         </span>
         <div className="box_text">
-          <span className="text_muted">{upd? (
-          <input 
-          className="edit_input" 
-          style={{width:`${data.phone_txt.length*10}px`}} 
-          type="text" 
-          value={text}
-          onChange={(e)=>setText(e.target.value)}
-          />)
-          :data.phone_txt
-          }
+          <span className="text_muted">
+            {upd ? (
+              <input
+                className="edit_input"
+                style={{
+                  width: `${
+                    data.phone_txt ? data.phone_txt.length * 10 : 100
+                  }px`,
+                }}
+                type="text"
+                value={text}
+                name="text"
+                onChange={hendleChange}
+              />
+            ) : (
+              data.phone_txt
+            )}
           </span>
           <span className="phone">
-            <b>{upd? (
-            <input 
-            className="edit_input" 
-            style={{width:`${data.phone.length*10}px`}} 
-            type="text" 
-            value={tel}
-            onChange={(e)=>setTel(e.target.value)}
-            />
-            )
-            :data.phone
-            }
+            <b>
+              {upd ? (
+                <input
+                  className="edit_input"
+                  style={{ width: `${data ? data.phone.length * 10 : 100}px` }}
+                  type="text"
+                  value={tel}
+                  onChange={hendleChange}
+                  name="tel"
+                />
+              ) : (
+                data.phone
+              )}
             </b>
           </span>
         </div>
