@@ -2405,6 +2405,7 @@ a {
             text-decoration: underline;
             line-height: 18px;
             font-size: 18px;
+            
           }
           .author {
             padding: 10px 30px 10px 30px;
@@ -2774,12 +2775,12 @@ a {
   }
   .footer {
     width: 100%;
-    height: 43rem;
+    // height: 43rem;
     background-color: #010c2a;
     z-index: 1;
-    padding-top: 248px;
+    // padding-top: 248px;
 
-    margin-top: -200px;
+    // margin-top: -200px;
     position: relative;
     .links {
       margin-left: auto;
@@ -2880,6 +2881,8 @@ a {
     animation-timing-function: cubic-bezier(0.83, 0, 0.17, 1);
     -webkit-animation-name: prev;
     animation-name: prev;
+    animation-fill-mode: forwards;
+
   }
 
   .carousel_.next {
@@ -2889,6 +2892,8 @@ a {
     animation-timing-function: cubic-bezier(0.83, 0, 0.17, 1);
     -webkit-animation-name: next;
     animation-name: next;
+    animation-fill-mode: forwards;
+
   }
   canvas {
     position: absolute;
@@ -4605,7 +4610,6 @@ a {
         padding: 0;
         justify-content: space-around;
         flex-direction: column;
-        z-index: 5;
         .prev {
           -webkit-animation-duration: 0.6s;
           animation-duration: 0.6s;
@@ -4648,6 +4652,7 @@ a {
             text-decoration: underline;
             line-height: 18px;
             font-size: 18px;
+            
           }
           .author {
             padding: 10px 30px 10px 30px;
@@ -4734,7 +4739,6 @@ a {
       }
     }
   }
-
   .section_9 {
     width: 70%;
     margin-right: auto;
@@ -5016,12 +5020,12 @@ a {
   }
   .footer {
     width: 100%;
-    height: 43rem;
+    // height: 43rem;
     background-color: #010c2a;
     z-index: 1;
-    padding-top: 248px;
+    // padding-top: 248px;
 
-    margin-top: -200px;
+    // margin-top: -200px;
     position: relative;
     .links {
       margin-left: auto;
@@ -5122,6 +5126,8 @@ a {
     animation-timing-function: cubic-bezier(0.83, 0, 0.17, 1);
     -webkit-animation-name: prev;
     animation-name: prev;
+    animation-fill-mode: forwards;
+
   }
 
   .carousel_.next {
@@ -5131,6 +5137,8 @@ a {
     animation-timing-function: cubic-bezier(0.83, 0, 0.17, 1);
     -webkit-animation-name: next;
     animation-name: next;
+    animation-fill-mode: forwards;
+
   }
   canvas {
     position: absolute;
@@ -6806,14 +6814,14 @@ a {
       .ui {
         position: absolute;
         padding: 30px;
-        top: 80%;
+        top: 50%;
         transform: translateY(-50%);
         display: flex;
         width: 100%;
         justify-content: space-between;
         left: 0px;
-        z-index: 6;
-        opacity: 1;
+        z-index: 100;
+        opacity: 0;
         transition: 0.3s all linear;
         button {
           cursor: pointer;
@@ -6836,7 +6844,12 @@ a {
           border: 1px solid white;
         }
       }
-
+      &:hover {
+        .ui {
+          opacity: 1;
+          transition: 0.3s all linear;
+        }
+      }
       .carousel_ {
         display: flex;
         flex-wrap: wrap;
@@ -6845,7 +6858,6 @@ a {
         padding: 0;
         justify-content: space-around;
         flex-direction: column;
-        z-index: 5;
         .prev {
           -webkit-animation-duration: 0.6s;
           animation-duration: 0.6s;
@@ -6888,6 +6900,7 @@ a {
             text-decoration: underline;
             line-height: 20px;
             font-size: 20px;
+            
           }
           .author {
             padding: 10px 30px 10px 30px;
@@ -7256,12 +7269,12 @@ a {
   }
   .footer {
     width: 100%;
-    height: 30rem;
+    // height: 30rem;
     background-color: #010c2a;
     z-index: 1;
-    padding-top: 148px;
+    // padding-top: 148px;
 
-    margin-top: -100px;
+    // margin-top: -100px;
     position: relative;
     .links {
       margin-left: auto;
@@ -7362,6 +7375,8 @@ a {
     animation-timing-function: cubic-bezier(0.83, 0, 0.17, 1);
     -webkit-animation-name: prev;
     animation-name: prev;
+    animation-fill-mode: forwards;
+
   }
 
   .carousel_.next {
@@ -7371,6 +7386,7 @@ a {
     animation-timing-function: cubic-bezier(0.83, 0, 0.17, 1);
     -webkit-animation-name: next;
     animation-name: next;
+    animation-fill-mode: forwards;
   }
   canvas {
     position: absolute;
@@ -7394,7 +7410,7 @@ a {
     }
 
     to {
-      transform: translateX(10rem);
+      transform: translateX(5rem);
     }
   }
 
@@ -7404,7 +7420,7 @@ a {
     }
 
     to {
-      transform: translateX(10rem);
+      transform: translateX(5rem);
     }
   }
 
@@ -7414,7 +7430,7 @@ a {
     }
 
     to {
-      transform: translateX(-50rem);
+      transform: translateX(-5rem);
     }
   }
 
@@ -7424,7 +7440,7 @@ a {
     }
 
     to {
-      transform: translateX(-50rem);
+      transform: translateX(-5rem);
     }
   }
   @keyframes play {
@@ -8961,7 +8977,6 @@ a {
         padding: 0;
         justify-content: space-around;
         flex-direction: column;
-        z-index: 5;
         .prev {
           -webkit-animation-duration: 0.6s;
           animation-duration: 0.6s;
@@ -9004,6 +9019,7 @@ a {
             text-decoration: underline;
             line-height: 18px;
             font-size: 12px;
+            
           }
           .author {
             padding: 10px 30px 10px 30px;
@@ -9379,9 +9395,9 @@ a {
     height: 100%;
     background-color: #010c2a;
     z-index: 1;
-    padding-top: 148px;
+    // padding-top: 148px;
 
-    margin-top: -100px;
+    // margin-top: -100px;
     position: relative;
     .links {
       margin-left: auto;
@@ -11119,7 +11135,6 @@ a {
         padding: 0;
         justify-content: space-around;
         flex-direction: column;
-        z-index: 5;
         .prev {
           -webkit-animation-duration: 0.6s;
           animation-duration: 0.6s;
@@ -11162,6 +11177,7 @@ a {
             text-decoration: underline;
             line-height: 18px;
             font-size: 12px;
+            
           }
           .author {
             padding: 10px 30px 10px 30px;
@@ -11537,9 +11553,9 @@ a {
     height: 100%;
     background-color: #010c2a;
     z-index: 1;
-    padding-top: 148px;
+    // padding-top: 148px;
 
-    margin-top: -100px;
+    // margin-top: -100px;
     position: relative;
     .links {
       margin-left: auto;
@@ -13287,7 +13303,6 @@ a {
         padding: 0;
         justify-content: space-around;
         flex-direction: column;
-        z-index: 5;
         .prev {
           -webkit-animation-duration: 0.6s;
           animation-duration: 0.6s;
@@ -13330,6 +13345,7 @@ a {
             text-decoration: underline;
             line-height: 18px;
             font-size: 12px;
+
           }
           .author {
             padding: 10px 30px 10px 30px;
@@ -13709,10 +13725,10 @@ a {
     height: 100%;
     background-color: #010c2a;
     z-index: 1;
-    padding-top: 148px;
+    // padding-top: 148px;
     margin-bottom: 20px;
 
-    margin-top: -100px;
+    // margin-top: -100px;
     position: relative;
     .links {
       margin-left: auto;

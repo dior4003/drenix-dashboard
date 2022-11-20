@@ -2594,11 +2594,8 @@ a {
   }
   .footer {
     width: 100%;
-    height: 43rem;
     background-color: #010c2a;
     z-index: 1;
-    padding-top: 248px;
-    margin-top: -200px;
     position: relative;
   }
   .footer .links {
@@ -2698,6 +2695,8 @@ a {
     animation-timing-function: cubic-bezier(0.83, 0, 0.17, 1);
     -webkit-animation-name: prev;
     animation-name: prev;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
   }
   .carousel_.next {
     -webkit-animation-duration: 0.6s;
@@ -2706,6 +2705,8 @@ a {
     animation-timing-function: cubic-bezier(0.83, 0, 0.17, 1);
     -webkit-animation-name: next;
     animation-name: next;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
   }
   canvas {
     position: absolute;
@@ -4367,7 +4368,6 @@ a {
     padding: 0;
     justify-content: space-around;
     flex-direction: column;
-    z-index: 5;
   }
   .section_8 .carouselwrapper .carousel_ .prev {
     -webkit-animation-duration: 0.6s;
@@ -4733,11 +4733,8 @@ a {
   }
   .footer {
     width: 100%;
-    height: 43rem;
     background-color: #010c2a;
     z-index: 1;
-    padding-top: 248px;
-    margin-top: -200px;
     position: relative;
   }
   .footer .links {
@@ -4837,6 +4834,8 @@ a {
     animation-timing-function: cubic-bezier(0.83, 0, 0.17, 1);
     -webkit-animation-name: prev;
     animation-name: prev;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
   }
   .carousel_.next {
     -webkit-animation-duration: 0.6s;
@@ -4845,6 +4844,8 @@ a {
     animation-timing-function: cubic-bezier(0.83, 0, 0.17, 1);
     -webkit-animation-name: next;
     animation-name: next;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
   }
   canvas {
     position: absolute;
@@ -6472,14 +6473,14 @@ a {
   .section_8 .carouselwrapper .ui {
     position: absolute;
     padding: 30px;
-    top: 80%;
+    top: 50%;
     transform: translateY(-50%);
     display: flex;
     width: 100%;
     justify-content: space-between;
     left: 0px;
-    z-index: 6;
-    opacity: 1;
+    z-index: 100;
+    opacity: 0;
     transition: 0.3s all linear;
   }
   .section_8 .carouselwrapper .ui button {
@@ -6502,6 +6503,10 @@ a {
     outline: none;
     border: 1px solid white;
   }
+  .section_8 .carouselwrapper:hover .ui {
+    opacity: 1;
+    transition: 0.3s all linear;
+  }
   .section_8 .carouselwrapper .carousel_ {
     display: flex;
     flex-wrap: wrap;
@@ -6510,7 +6515,6 @@ a {
     padding: 0;
     justify-content: space-around;
     flex-direction: column;
-    z-index: 5;
   }
   .section_8 .carouselwrapper .carousel_ .prev {
     -webkit-animation-duration: 0.6s;
@@ -6876,11 +6880,8 @@ a {
   }
   .footer {
     width: 100%;
-    height: 30rem;
     background-color: #010c2a;
     z-index: 1;
-    padding-top: 148px;
-    margin-top: -100px;
     position: relative;
   }
   .footer .links {
@@ -6980,6 +6981,8 @@ a {
     animation-timing-function: cubic-bezier(0.83, 0, 0.17, 1);
     -webkit-animation-name: prev;
     animation-name: prev;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
   }
   .carousel_.next {
     -webkit-animation-duration: 0.6s;
@@ -6988,6 +6991,8 @@ a {
     animation-timing-function: cubic-bezier(0.83, 0, 0.17, 1);
     -webkit-animation-name: next;
     animation-name: next;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
   }
   canvas {
     position: absolute;
@@ -7017,7 +7022,7 @@ a {
       transform: translateX(0px);
     }
     to {
-      transform: translateX(10rem);
+      transform: translateX(5rem);
     }
   }
   @keyframes next {
@@ -7025,7 +7030,7 @@ a {
       transform: translateX(0px);
     }
     to {
-      transform: translateX(10rem);
+      transform: translateX(5rem);
     }
   }
   @-webkit-keyframes prev {
@@ -7033,7 +7038,7 @@ a {
       transform: translateX(0px);
     }
     to {
-      transform: translateX(-50rem);
+      transform: translateX(-5rem);
     }
   }
   @keyframes prev {
@@ -7041,7 +7046,7 @@ a {
       transform: translateX(0px);
     }
     to {
-      transform: translateX(-50rem);
+      transform: translateX(-5rem);
     }
   }
   @-webkit-keyframes play {
@@ -8552,7 +8557,6 @@ a {
     padding: 0;
     justify-content: space-around;
     flex-direction: column;
-    z-index: 5;
   }
   .section_8 .carouselwrapper .carousel_ .prev {
     -webkit-animation-duration: 0.6s;
@@ -8925,8 +8929,6 @@ a {
     height: 100%;
     background-color: #010c2a;
     z-index: 1;
-    padding-top: 148px;
-    margin-top: -100px;
     position: relative;
   }
   .footer .links {
@@ -10630,7 +10632,6 @@ a {
     padding: 0;
     justify-content: space-around;
     flex-direction: column;
-    z-index: 5;
   }
   .section_8 .carouselwrapper .carousel_ .prev {
     -webkit-animation-duration: 0.6s;
@@ -11003,8 +11004,6 @@ a {
     height: 100%;
     background-color: #010c2a;
     z-index: 1;
-    padding-top: 148px;
-    margin-top: -100px;
     position: relative;
   }
   .footer .links {
@@ -12719,7 +12718,6 @@ a {
     padding: 0;
     justify-content: space-around;
     flex-direction: column;
-    z-index: 5;
   }
   .section_8 .carouselwrapper .carousel_ .prev {
     -webkit-animation-duration: 0.6s;
@@ -13096,9 +13094,7 @@ a {
     height: 100%;
     background-color: #010c2a;
     z-index: 1;
-    padding-top: 148px;
     margin-bottom: 20px;
-    margin-top: -100px;
     position: relative;
   }
   .footer .links {

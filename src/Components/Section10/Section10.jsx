@@ -1,5 +1,5 @@
 import React from "react";
-import Contact from "./ui/Contact";
+// import Contact from "./ui/Contact";
 import Corusel from "./ui/corusel";
 
 
