@@ -67,7 +67,6 @@ export default function Section6({ data, upd }) {
                   <div className="text_box">
                     <div className="title">
                       <h1>
-                        {item.title}
                         {upd ? (
                           <input
                             className="edit_input"
@@ -82,19 +81,46 @@ export default function Section6({ data, upd }) {
                                 ...section6,
                                 items: {
                                   ...section6.items,
-                                  [i]:{
-                                    title:e.target.value
-                                }},
+                                  [i]: {
+                                    title: e.target.value,
+                                  },
+                                },
                               })
                             }
                           />
                         ) : (
-                          data.title1
+                          item.title
                         )}
                       </h1>
                     </div>
                     <div className="decri">
-                      <p>{item.decr}</p>
+                      <p>
+                        {upd ? (
+                          <textarea
+                            className="edit_input"
+                            style={{
+                              width: `100%`,
+                              height: `100px`,
+                            }}
+                            name={`text${i}`}
+                            type="text"
+                            value={section6.items[i].decr}
+                            onChange={(e) =>
+                              setSection6({
+                                ...section6,
+                                items: {
+                                  ...section6.items,
+                                  [i]: {
+                                    decr: e.target.value,
+                                  },
+                                },
+                              })
+                            }
+                          ></textarea>
+                        ) : (
+                          item.decr
+                        )}
+                      </p>
                     </div>
                   </div>
                 </div>

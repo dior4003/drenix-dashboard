@@ -4605,6 +4605,7 @@ a {
         padding: 0;
         justify-content: space-around;
         flex-direction: column;
+        z-index: 5;
         .prev {
           -webkit-animation-duration: 0.6s;
           animation-duration: 0.6s;
@@ -6518,7 +6519,7 @@ a {
   .section_6 {
     z-index: 1;
     width: 100%;
-    height: 31rem;
+    height: 34rem;
     background-color: #f2f2f2;
     margin-bottom: 100px;
     background-image: url("../images/56kMUCBY2klo.png");
@@ -6805,14 +6806,14 @@ a {
       .ui {
         position: absolute;
         padding: 30px;
-        top: 50%;
+        top: 80%;
         transform: translateY(-50%);
         display: flex;
         width: 100%;
         justify-content: space-between;
         left: 0px;
-        z-index: 100;
-        opacity: 0;
+        z-index: 6;
+        opacity: 1;
         transition: 0.3s all linear;
         button {
           cursor: pointer;
@@ -6835,12 +6836,7 @@ a {
           border: 1px solid white;
         }
       }
-      &:hover {
-        .ui {
-          opacity: 1;
-          transition: 0.3s all linear;
-        }
-      }
+
       .carousel_ {
         display: flex;
         flex-wrap: wrap;
@@ -6849,6 +6845,7 @@ a {
         padding: 0;
         justify-content: space-around;
         flex-direction: column;
+        z-index: 5;
         .prev {
           -webkit-animation-duration: 0.6s;
           animation-duration: 0.6s;
@@ -8964,6 +8961,7 @@ a {
         padding: 0;
         justify-content: space-around;
         flex-direction: column;
+        z-index: 5;
         .prev {
           -webkit-animation-duration: 0.6s;
           animation-duration: 0.6s;
@@ -11121,6 +11119,7 @@ a {
         padding: 0;
         justify-content: space-around;
         flex-direction: column;
+        z-index: 5;
         .prev {
           -webkit-animation-duration: 0.6s;
           animation-duration: 0.6s;
@@ -13288,6 +13287,7 @@ a {
         padding: 0;
         justify-content: space-around;
         flex-direction: column;
+        z-index: 5;
         .prev {
           -webkit-animation-duration: 0.6s;
           animation-duration: 0.6s;

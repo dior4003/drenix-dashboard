@@ -14,7 +14,7 @@ export default function Section10({ data }) {
       <div id="corusel">
         <Corusel data={data.corusel ? data.corusel : []} />
       </div>
-      <Contact datas={data.contact ? data.contact : []} />
+      {/* <Contact datas={data.contact ? data.contact : []} /> */}
     </section>
   );
 }
